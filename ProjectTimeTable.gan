@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-02-26" view-index="1" gantt-divider-location="300" resource-divider-location="300" version="2.8.6" locale="pl">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-02-26" view-index="1" gantt-divider-location="480" resource-divider-location="359" version="2.8.6" locale="pl">
     <description/>
     <view zooming-state="default:0" id="gantt-chart">
-        <field id="tpd3" name="Nazwa zadania" width="167" order="0"/>
-        <field id="tpd4" name="Data rozpoczęcia" width="65" order="1"/>
-        <field id="tpd5" name="Data zakończenia" width="64" order="2"/>
+        <field id="tpd3" name="Nazwa zadania" width="242" order="0"/>
+        <field id="tpd4" name="Data rozpoczęcia" width="117" order="1"/>
+        <field id="tpd5" name="Data zakończenia" width="117" order="2"/>
+        <timeline><![CDATA[4,5]]></timeline>
+        <option id="color.recent"><![CDATA[#ff0000 #ff3333]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Osoba" width="210" order="0"/>
-        <field id="1" name="Domyślna rola" width="86" order="1"/>
+        <field id="0" name="Osoba" width="240" order="0"/>
+        <field id="1" name="Domyślna rola" width="115" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -33,17 +35,35 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
+        <task id="4" name="Stowrzenie repozytorium na platformie github" color="#ff0000" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2018-02-26" duration="1" complete="100" thirdDate="2018-02-27" thirdDate-constraint="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="Stworzenie lokalnego repozytorium" color="#ff3333" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2018-02-27" duration="1" complete="2" thirdDate="2018-02-27" thirdDate-constraint="0" priority="2" expand="true"/>
+        <task id="0" name="Rozmowa z klientem" color="#8cb6ce" meeting="false" start="2018-02-27" duration="1" complete="0" thirdDate="2018-02-27" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources>
-        <resource id="0" name="Paweł Bawarski" function="SoftwareDevelopment:2" contacts="pawel.bawarski94@gmail.com" phone="555333222"/>
-        <resource id="1" name="Michał Szczygłowski" function="SoftwareDevelopment:2" contacts="szczyglowski.michal@o2.pl" phone="888777666"/>
-        <resource id="2" name="Michał Lipski" function="Default:1" contacts="michal.lipski_95@o2.pl" phone="665445775">
+        <resource id="0" name="Paweł Bawarski" function="SoftwareDevelopment:2" contacts="pawel.bawarski94@gmail.com" phone="555333222">
             <rate name="standard" value="5"/>
         </resource>
+        <resource id="1" name="Michał Szczygłowski" function="SoftwareDevelopment:2" contacts="szczyglowski.michal@o2.pl" phone="888777666">
+            <rate name="standard" value="5"/>
+        </resource>
+        <resource id="2" name="Michał Lipski" function="Default:1" contacts="michal.lipski_95@o2.pl" phone="665445775">
+            <rate name="standard" value="10"/>
+        </resource>
     </resources>
-    <allocations/>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="50.0"/>
+        <allocation task-id="5" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="50.0"/>
+        <allocation task-id="0" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="50.0"/>
+        <allocation task-id="5" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="50.0"/>
+        <allocation task-id="5" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+    </allocations>
     <vacations>
         <vacation start="2018-03-03" end="2018-03-05" resourceid="0"/>
+        <vacation start="2018-03-03" end="2018-03-05" resourceid="1"/>
+        <vacation start="2018-03-03" end="2018-03-05" resourceid="2"/>
     </vacations>
     <previous/>
     <roles roleset-name="Default"/>
