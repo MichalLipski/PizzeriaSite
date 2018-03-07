@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-02-26" view-index="1" gantt-divider-location="480" resource-divider-location="359" version="2.8.6" locale="pl">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-01-01" view-index="0" gantt-divider-location="480" resource-divider-location="359" version="2.8.6" locale="pl">
     <description/>
-    <view zooming-state="default:0" id="gantt-chart">
+    <view zooming-state="default:8" id="gantt-chart">
         <field id="tpd3" name="Nazwa zadania" width="242" order="0"/>
         <field id="tpd4" name="Data rozpoczęcia" width="117" order="1"/>
         <field id="tpd5" name="Data zakończenia" width="117" order="2"/>
-        <timeline><![CDATA[4,5]]></timeline>
+        <timeline><![CDATA[5,4]]></timeline>
         <option id="color.recent"><![CDATA[#ff0000 #ff3333]]></option>
     </view>
     <view id="resource-table">
@@ -37,28 +37,55 @@
         </taskproperties>
         <task id="4" name="Stowrzenie repozytorium na platformie github" color="#ff0000" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2018-02-26" duration="1" complete="100" thirdDate="2018-02-27" thirdDate-constraint="0" expand="true">
             <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="5" name="Stworzenie lokalnego repozytorium" color="#ff3333" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2018-02-27" duration="1" complete="2" thirdDate="2018-02-27" thirdDate-constraint="0" priority="2" expand="true"/>
         <task id="0" name="Rozmowa z klientem" color="#8cb6ce" meeting="false" start="2018-02-27" duration="1" complete="0" thirdDate="2018-02-27" thirdDate-constraint="0" expand="true"/>
+        <task id="6" name="Przygotowanie dokumentacji do projektu" color="#8cb6ce" meeting="false" start="2018-03-05" duration="8" complete="0" thirdDate="2018-03-05" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" name="Utworzenie bazy danych SQL" color="#8cb6ce" meeting="false" start="2018-03-15" duration="12" complete="0" thirdDate="2018-03-15" thirdDate-constraint="0" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="14" name="Stworznie strony internetowej" color="#8cb6ce" meeting="false" start="2018-04-02" duration="15" complete="0" thirdDate="2018-04-02" thirdDate-constraint="0" expand="true">
+            <depend id="16" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="16" name="Zaprogramowanie funkcjonalności" color="#8cb6ce" meeting="false" start="2018-04-23" duration="15" complete="0" thirdDate="2018-04-23" thirdDate-constraint="0" expand="true">
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="18" name="Testowanie serwisu" color="#8cb6ce" meeting="false" start="2018-05-14" duration="10" complete="0" thirdDate="2018-05-14" thirdDate-constraint="0" expand="true">
+            <depend id="29" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="29" name="Czas na ewentualne poprawki" color="#8cb6ce" meeting="false" start="2018-05-28" duration="10" complete="0" thirdDate="2018-05-28" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Paweł Bawarski" function="SoftwareDevelopment:2" contacts="pawel.bawarski94@gmail.com" phone="555333222">
-            <rate name="standard" value="5"/>
+            <rate name="standard" value="4000"/>
         </resource>
         <resource id="1" name="Michał Szczygłowski" function="SoftwareDevelopment:2" contacts="szczyglowski.michal@o2.pl" phone="888777666">
-            <rate name="standard" value="5"/>
+            <rate name="standard" value="4000"/>
         </resource>
         <resource id="2" name="Michał Lipski" function="Default:1" contacts="michal.lipski_95@o2.pl" phone="665445775">
-            <rate name="standard" value="10"/>
+            <rate name="standard" value="5000"/>
         </resource>
     </resources>
     <allocations>
         <allocation task-id="0" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="50.0"/>
         <allocation task-id="5" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="50.0"/>
+        <allocation task-id="13" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="33.0"/>
+        <allocation task-id="29" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="0" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="50.0"/>
         <allocation task-id="5" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="50.0"/>
+        <allocation task-id="14" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="33.0"/>
+        <allocation task-id="29" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="5" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="4" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="2" function="Default:1" responsible="false" load="33.0"/>
+        <allocation task-id="29" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
     </allocations>
     <vacations>
         <vacation start="2018-03-03" end="2018-03-05" resourceid="0"/>

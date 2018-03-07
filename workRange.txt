@@ -1,0 +1,14 @@
+﻿Zakres przedsięwzięcia - wykorzystanie technologii webowej. Wykorzystany zostanie serwer na którym będzie umieszczona nasza strona.
+
+Systemy zewnętrzne z którymi system będzie współpracował:
+Aplikacja będzie współpracować z bazą danych SQL.
+
+Wstępne koszty projektu (cena za miesiąc):
+- 4 tysiące zł. dla każdego z pracowników.
+- 5 tysięcy zł. dla kierownika projektu.
+- 63 zł. za hosting witryny na serwerze(cały rok).
+- 70 zł na kawę.
+- 400 zł wynajem pomiesczenia.
+- 80 zł opłaty za media.
+- 600 zł zakup 3 licencji na rok programu antywirusowego.
+- 400 zł (sztuka) leasing 3 laptopów na czas projektu.
