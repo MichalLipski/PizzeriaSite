@@ -10,46 +10,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script src="main.js"></script>
+    <script src="script1.js"></script>
 
 </head>
 
 <body>
+    <div id="whole">
     <div id="container">
-        <div id="logo">
-            <img src=".\img\menuBanner.jpg" width="996px" height="300px">
+        <div id="logo" background>
+                <button type="button" id="button1" style="float:right;" onclick="document.getElementById('id01').style.display='block'">Zaloguj</button>
+                <!--saaaaaaaassssssalllllllllllllllllllllllllllllllllllllllllllll -->
+                <div id="id01" class="modal">
+  
+                        <form class="modal-content animate">
+                      
+                          <div class="container">
+                            <label for="uname"><b>Login:</b></label>
+                            <input type="text" placeholder="Enter Username"  required>
+                      
+                            <label for="psw"><b>Haslo:</b></label>
+                            <input type="password" placeholder="Enter Password"  required>
+                              
+                            <a href="http://www.google.pl"><button type="submit">Login</button></a>
+                            
+                          </div>
+                      
+                          
+                        </form>
+                      </div>
+                      
+                      <!-- <script>
+                      // Get the modal
+                      var modal = document.getElementById('id01');
+                      
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                          if (event.target == modal) {
+                              modal.style.display = "none";
+                          }
+                      }
+                      </script> -->
+                      
+
+
         </div>
         <div id="topbar">
             <div id="topbarL">
                 <img src=".\img\miniLogo.jpg" width="130px" height="130px">
             </div>
             <div id="topbarR">
-             <span class="bigtitle">Dlaczego Papa Malix?<br/></span>     
-                    ...Pyszne chrupiące ciasto, gorący, ciągnący się serek, sos z dojrzałych rozkosznych pomidorów oraz twoje ulubione
-                    dodatki, a to wszystko w super cenie na którą nawet student może sobie pozowlić! Zajrzyj do menu Pizzeri Papa Malix 
-                    i wybierz swoją ulubioną pizze, wyślij zamówienie, a my błyskawicznie oddzwonimy i dowieziemy ci jedzenie pod same drzwi :)
+            <img src="img/giphy.gif" height="200" width="796">
             </div>
             <div style="clear:both"></div>
            
         </div>
         <div id="menu">
-            <a href="index.html">
-                <div class="option">Strona główna</div>
-            </a>
-            <a href="menu.html">
-                <div class="option">Menu</div>  
-            </a>
-            <a href="promocje.html">
-                <div class="option">Promocje</div>  
-            </a>
-            <a href="kontakt.html">
-                <div class="option">Kontakt</div> 
-            </a>
+            
             <a href="zamowienie.html">
-                    <div class="option">Złóż zamówienie!</div> 
-                </a>
-                <a href="pracownik.html">
-                        <div class="option" style="background-color:red;">Logowanie [dla pracownika]</div> 
+                    <div class="option">Złóż zamówienie!</div> </a>
+                    <a href="menu.html">
+                        <div class="option">Menu</div>  
+                    </a>
+                    <a href="promocje.html">
+                        <div class="option">Promocje</div>  
+                    </a>
+                    <a href="kontakt.html">
+                        <div class="option">Kontakt</div> 
                     </a>
                 <div style="clear:both"></div>
         </div>
@@ -58,23 +84,23 @@
         
         <div id="content">
             <img src=".\img\conowego.png">
-            <div class="dottedLine"></div> 
-            <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nec purus quis sollicitudin. Nullam laoreet tristique tortor, in pharetra erat venenatis ac. Ut eu posuere magna. Praesent fringilla sapien a lectus aliquet auctor. Praesent nec dolor velit. Quisque eget congue nibh. Quisque nec mauris et risus dictum dignissim.
-<br/><br/>
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed id maximus ante. Nunc vel lorem vitae ligula pharetra volutpat at id nisl. Etiam posuere egestas dolor id pellentesque. Aliquam ac lacus accumsan, volutpat eros aliquam, convallis urna. Sed quis congue velit. Integer fringilla consectetur sem, sed mollis dui molestie quis. Curabitur sed dolor faucibus, suscipit massa vitae, facilisis magna. Duis lobortis ullamcorper justo, ut congue sapien lobortis nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer sodales id justo et malesuada.
-<br/><br/>
-Ut posuere nunc eget urna sollicitudin, eu interdum justo commodo. Aenean sed diam magna. Nulla nibh metus, tincidunt id vehicula sed, aliquam ut eros. Nam suscipit faucibus libero, ac volutpat augue luctus eget. Donec a tortor sem. Etiam dignissim est lectus, ut convallis elit tempor vitae. Proin ut cursus ipsum, vel rhoncus neque. Proin convallis consequat ullamcorper. Quisque purus augue, vestibulum in maximus non, rutrum vitae sem. Nulla nibh purus, tempus nec metus in, tristique tristique dolor. Aenean pellentesque nulla quis turpis semper vehicula. Donec hendrerit orci vel felis dictum condimentum.
-
+            <div class="dottedLine"></div>
+            <div class="pizza"><img src=".\img\apollo.gif" width="150" height="150"><br/><br/><span style="color:#CB0602">Apollo</span><br/><br>salami, grilowany kurczak,<br/><br/> zielona papryka, cebula</div>
+            <div class="pizza"><img src=".\img\amerykanska.png" width="150" height="150"><br/><br/><span style="color:#CB0602">Amerykanska</span><br/><br>salami, grilowany kurczak,<br/><br/> zielona papryka, cebula</div>
+            <div class="pizza"><img src=".\img\everest.gif" width="150" height="150"><br/><br/><span style="color:#CB0602">Everest</span><br/><br>salami, grilowany kurczak,<br/><br/> zielona papryka, cebula</div>
+            <div class="pizza"><img src=".\img\peperoni.png" width="150" height="150"><br/><br/><span style="color:#CB0602">Peperoni</span><br/><br>salami, salami, salami<br/><br/>ser,ser,ser</div>
+            <div class="pizza"><img src=".\img\cukinia.png" width="150" height="150"><br/><br/><span style="color:#CB0602">Cukinio</span><br/><br>szynka, cukinia<br/><br/>ser</div>
+            <div class="pizza"><img src=".\img\fireball.gif" width="150" height="150"><br/><br/><span style="color:#CB0602">FireBall</span><br/><br>salami, grilowany kurczak,<br/><br/> zielona papryka, cebula</div>
+            
         </div>
         <div id="sidebar">
-            <img src=".\img\reklama.jpg">
+            <img src=".\img\reklama.jpg" width="247">
     </div>
         <div id="footer">
                 Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
             </div>
     </div>
-
-
+</div>
 
 </body>
 
