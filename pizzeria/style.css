@@ -85,13 +85,12 @@ body
     background-color: black;
     text-align: center;
     font-size: 18px;
-    min-height: 620px;
+    min-height: 1038px;
     
 }
 
 #content
 {
-    margin-top: 5px;
     color: white;
     float: left;
     padding: 40px;
@@ -99,6 +98,7 @@ body
     background-color:black;
     min-height: 580px;
     text-align: justify;
+
 
 }
 
@@ -160,7 +160,7 @@ a > .option
 {
     text-align: center;
     float: left;
-    padding: 10px;
+    padding: 5px;
     width: 30%;
     line-height: 8px;
     margin-top: 10px;
@@ -214,8 +214,8 @@ span.psw {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 855px;
-    top: 8px;
+    left: 64%;
+    top: 1%;
     width: 400px; /* Full width */
     height: 350px; /* Full height */
     overflow: auto; /* Enable scroll if needed */
