@@ -1,4 +1,15 @@
-﻿<!DOCTYPE html>
+﻿<?php
+
+	session_start();
+	
+	if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true))
+	{
+		header('Location: zamowienia.php');
+		exit();
+	}
+
+?>
+<!DOCTYPE html>
 <html>
 <head>
     <html lang="pl">
@@ -10,11 +21,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script src="script1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+	<script src="controller.js"></script>
 
 </head>
 
-<body>
+<body ng-controller="formCtrl">
     <div id="whole">
     <div id="container">
         <div id="logo" background>
@@ -24,44 +36,31 @@
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="file:///C:/Users/admin/Desktop/HTML/CSS%20odc2/pizzeria/menu.html">
+<form action="zaloguj.php" method="post"> 
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     </div>
 
     <div class="container">
       <label for="uname"><b>Login:</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
+      <input type="text" placeholder="Enter Username" name="login" required/>
       <label for="psw"><b>Haslo:</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="haslo" required/>
         
-      <button type="submit">Zaloguj</button>
+      <input type="submit" value="Zaloguj"/> 
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
+        
     </div>
   </form>
-</div>
-                <!-- <div id="id01" class="modal">
+  <?php
+	if(isset($_SESSION['blad']))	echo $_SESSION['blad'];
+    ?>
   
-                        <form class="modal-content animate">
-                            <form class="modal-content animate" action="/action_page.php">
-                          <div class="container">
-                            <label for="login"><b>Login:</b></label>
-                            <input type="text" placeholder="Enter Username"  required>
-                      
-                            <label for="psw"><b>Haslo:</b></label>
-                            <input type="password" placeholder="Enter Password"  required>
-                              
-                            <a href="http://www.google.pl"><button type="submit">Login</button></a>
-                            <button type="submit">Login</button>
-                          </div>
-                      
-                        </form>
-                        </form>
-                      </div>
-                       -->
+</div>
+                
+                       
                       <script>
                       // Get the modal
                       var modal = document.getElementById('id01');
@@ -89,7 +88,7 @@
         </div>
         <div id="menu">
             
-            <a href="zamowienie.html">
+            <a href="index.php">
                     <div class="option">Złóż zamówienie!</div> </a>
                     <a href="menu.html">
                         <div class="option">Menu</div>  
@@ -97,7 +96,7 @@
                     <a href="promocje.html">
                         <div class="option">Promocje</div>  
                     </a>
-                    <a href="kontakt.html">
+                    <a href="kontakt.php">
                         <div class="option">Kontakt</div> 
                     </a>
                 <div style="clear:both"></div>
@@ -106,10 +105,15 @@
         
         
         <div id="content">
-            <img src=".\img\promocje.png">
-            <div class="dottedLine"></div>
-            <img src=".\img\promka.png" width="300px" height="300px">
-            <img src=".\img\promocja.png" width="300px" height="300px">
+        <form action="odbierz.php" method="post">
+      <div><label for="imie">Imię:</label><input id="imie" name="imie" /></div>
+      <div><label for="nazwisko">Nazwisko:</label><input id="nazwisko" name="nazwisko" /></div>
+      <div><label for="telefon">Telefon:</label><input id="telefon" name="telefon" /></div>
+      <div><label for="ulica">Ulica i nr domu:</label><input id="ulica" name="ulica" /></div>
+
+      
+      <div><input type="submit" value="Wyślij" /></div>
+   </form>
         </div>
         <div id="sidebar">
             <img src=".\img\reklama.jpg" width="247">

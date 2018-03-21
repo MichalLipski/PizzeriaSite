@@ -10,44 +10,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script src="main.js"></script>
+    <script src="script1.js"></script>
 
 </head>
 
 <body>
+    <div id="whole">
     <div id="container">
-        <div id="logo">
-            <img src=".\img\menuBanner.jpg" width="996px" height="300px">
+        <div id="logo" background>
+                <button type="button" id="button1" style="float:right;" onclick="document.getElementById('id01').style.display='block'">Zaloguj</button>
+                <!--saaaaaaaassssssalllllllllllllllllllllllllllllllllllllllllllll -->
+            
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="file:///C:/Users/admin/Desktop/HTML/CSS%20odc2/pizzeria/menu.html">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Login:</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Haslo:</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Zaloguj</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+    </div>
+  </form>
+</div>
+                <!-- <div id="id01" class="modal">
+  
+                        <form class="modal-content animate">
+                            <form class="modal-content animate" action="/action_page.php">
+                          <div class="container">
+                            <label for="login"><b>Login:</b></label>
+                            <input type="text" placeholder="Enter Username"  required>
+                      
+                            <label for="psw"><b>Haslo:</b></label>
+                            <input type="password" placeholder="Enter Password"  required>
+                              
+                            <a href="http://www.google.pl"><button type="submit">Login</button></a>
+                            <button type="submit">Login</button>
+                          </div>
+                      
+                        </form>
+                        </form>
+                      </div>
+                       -->
+                      <script>
+                      // Get the modal
+                      var modal = document.getElementById('id01');
+                      
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                          if (event.target == modal) {
+                              modal.style.display = "none";
+                          }
+                      }
+                      </script>
+                      
+
+
         </div>
         <div id="topbar">
             <div id="topbarL">
                 <img src=".\img\miniLogo.jpg" width="130px" height="130px">
             </div>
             <div id="topbarR">
-             <span class="bigtitle">Dlaczego Papa Malix?<br/></span>     
-                    ...Pyszne chrupiące ciasto, gorący, ciągnący się serek, sos z dojrzałych rozkosznych pomidorów oraz twoje ulubione
-                    dodatki, a to wszystko w super cenie na którą nawet student może sobie pozowlić! Zajrzyj do menu Pizzeri Papa Malix 
-                    i wybierz swoją ulubioną pizze, wyślij zamówienie, a my błyskawicznie oddzwonimy i dowieziemy ci jedzenie pod same drzwi :)
+            <img src="img/giphy.gif" height="200" width="796">
             </div>
             <div style="clear:both"></div>
            
         </div>
         <div id="menu">
-            <a href="index.html">
-                <div class="option">Strona główna</div>
-            </a>
-            <a href="menu.html">
-                <div class="option">Menu</div>  
-            </a>
-            <a href="promocje.html">
-                <div class="option">Promocje</div>  
-            </a>
-            <a href="kontakt.html">
-                <div class="option">Kontakt</div> 
-            </a>
+            
             <a href="zamowienie.html">
-                    <div class="option">Złóż zamówienie!</div> 
-                </a>
+                    <div class="option">Złóż zamówienie!</div> </a>
+                    <a href="menu.html">
+                        <div class="option">Menu</div>  
+                    </a>
+                    <a href="promocje.html">
+                        <div class="option">Promocje</div>  
+                    </a>
+                    <a href="kontakt.html">
+                        <div class="option">Kontakt</div> 
+                    </a>
                 <div style="clear:both"></div>
         </div>
         
@@ -55,18 +107,29 @@
         
         <div id="content">
             <img src=".\img\menu.png">
-            <div class="dottedLine"></div> 
-            Ciągle pracujemy nad stworzeniem jak najlepszych Pizz do naszego menu :)
+            <div class="dottedLine"></div>
+            <div class="pizza"><img src=".\img\apollo.gif" width="100" height="100"><span style="color:#CB0602"><h3>Apollo</h3></span><br/>salami, grilowany kurczak,<br/><br/> zielona papryka, cebula</div>
+            <div class="pizza"><img src=".\img\amerykanska.png" width="100" height="100"><span style="color:#CB0602"><h3>Amerykanska</h3></span><br/>szynka, ser, pieczarki, bekon</div>
+            <div class="pizza"><img src=".\img\everest.gif" width="100" height="100"><span style="color:#CB0602"><h3>Everest</h3></span><br>pieczarki, cebula, kurczak<br/><br/> czerwona papryka, zielona<br/><br/> papryka, kukurydza</div>
+            <div class="pizza"><img src=".\img\peperoni.png" width="100" height="100"><span style="color:#CB0602"><h3>Peperoni</h3></span><br/>salami, salami, salami<br/><br/>ser,ser,ser</div>
+            <div class="pizza"><img src=".\img\cukinia.png" width="100" height="100"><span style="color:#CB0602"><h3>Cukinio</h3></span><br/>szynka, cukinia<br/><br/>ser</div>
+            <div class="pizza"><img src=".\img\fireball.gif" width="100" height="100"><span style="color:#CB0602"><h3>FireBall</h3></span><br/>salami, grilowany kurczak,</br><br/> papryczki jalapeno, całość<br/><br/> polana sosem Barbecue<br/><br/> zielona papryka, cebula</div> 
+            <div class="pizza"><img src=".\img\trzysery.gif" width="100" height="100"><span style="color:#CB0602"><h3>Trzy sery</h3></span><br/>ser feta, ser mozzarella,<br/><br/> ser ricotta</div>
+            <div class="pizza"><img src=".\img\grecka.gif" width="100" height="100"><span style="color:#CB0602"><h3>Grecka</h3></span><br/>szynka, ser feta, świeży<br/><br/> pomidor, cebula</div>
+            <div class="pizza"><img src=".\img\capricciosa.gif" width="100" height="100"><span style="color:#CB0602"><h3>Capricciosa</h3></span><br>szynka, pieczarki, ser</div>    
+            <div style="clear:both"></div>
+            <div class="pizza"><img src=".\img\tomato.gif" width="100" height="100"><span style="color:#CB0602"><h3>Tomato</h3></span><br/>świeży pomidor, cebula,<br/><br/> ser mozzarella</div>
+            <div class="pizza"><img src=".\img\zbojnicka.gif" width="100" height="100"><span style="color:#CB0602"><h3>Zbójnicka</h3></span><br/>cebula, grilowany kurczak,<br/><br/> bekon, wędzony ser</div>
+            <div class="pizza"><img src=".\img\vegetariana.gif" width="100" height="100"><span style="color:#CB0602"><h3>Vegetariana</h3></span><br/>czerwona papryka, zielona <br/><br/>papryka, cebula, kukurydza,<br/><br/> pieczarki, czarne oliwk</div>
         </div>
         <div id="sidebar">
-            <img src=".\img\reklama.jpg">
+            <img src=".\img\reklama.jpg" width="247">
     </div>
         <div id="footer">
                 Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
             </div>
     </div>
-
-
+</div>
 
 </body>
 
