@@ -74,10 +74,9 @@ echo "<p>Witaj ".$_SESSION['user'].'! [ <a href="logout.php">Wyloguj się!</a> ]
         
         <div id="content">
         <object data="kodbierz.txt" type="text/plain" width="500px" height="500px"></object>
-asdasdasd
     </div>
         <div id="sidebar">
-            <img src=".\img\reklama.jpg" width="247">
+            <img src="https://zapodaj.net/images/573fe4fedf05f.jpg" width="247">
     </div>
         <div id="footer">
                 Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
