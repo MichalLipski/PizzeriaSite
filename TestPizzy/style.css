@@ -43,6 +43,20 @@ body
     border-left: black 3px solid;
     color: 	#B68A48
 }
+
+.optionz
+{
+    background-color:	#AE1506;
+    float: left;
+    width: 477px;
+    height: 25px;
+    font-size: 18px;
+    padding: 10px;
+    opacity: 0.8;
+    text-align: center;
+    border-left: black 3px solid;
+    color: 	rgb(255, 254, 251)
+}
 .option:hover
 {
     color: yellow;
@@ -91,14 +105,13 @@ body
 
 #content
 {
-    color: white;
+    color:white;
+    background-color: black;
     float: left;
     padding: 40px;
     width: 670px;
-    background-color:black;
     min-height: 580px;
     text-align: justify;
-
 
 }
 
@@ -181,16 +194,7 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
-/* button {
-    background-color: black;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-} */
+
 
 button:hover {
     opacity: 0.8;
@@ -211,13 +215,14 @@ span.psw {
 
 /* The Modal (background) */
 .modal {
+    background-color: #FFFFFF;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 64%;
     top: 1%;
-    width: 400px; /* Full width */
-    height: 350px; /* Full height */
+    width: 350px; /* Full width */
+    height: 270px; /* Full height */
     overflow: auto; /* Enable scroll if needed */
 
 
