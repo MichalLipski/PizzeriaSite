@@ -106,13 +106,11 @@
         
         <div id="content">
         <form action="odbierz.php" method="post">
-      <div><label for="imie">Imię:</label><input id="imie" name="imie" /></div>
-      <div><label for="nazwisko">Nazwisko:</label><input id="nazwisko" name="nazwisko" /></div>
       <div><label for="telefon">Telefon:</label><input id="telefon" name="telefon" /></div>
       <div><label for="ulica">Ulica i nr domu:</label><input id="ulica" name="ulica" /></div>
 
       
-      <div><input type="submit" value="Wyślij" /></div>
+      <div><input type="submit" value="Wyślij" name="submit" /></div>
    </form>
         </div>
         <div id="sidebar">

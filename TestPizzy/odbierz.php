@@ -1,11 +1,10 @@
 <?php
-$imie=$_POST['imie'];
-$nazwisko=$_POST['nazwisko'];
+
 $telefon=$_POST['telefon'];
 $ulica=$_POST['ulica'];
 // zmienna $dane, która będzie zapisana
 // może także pochodzić z formularza np. $dane = $_POST['dane'];
-$dane=$imie."\t".$nazwisko."\t".$telefon."\t".$ulica."\r\n" ;
+$dane=$telefon."\t".$ulica."\r\n" ;
 
 // przypisanie zmniennej $file nazwy pliku
 $file="plik.txt";
@@ -30,5 +29,31 @@ flock($fp, 3);
 
 // zamknięcie pliku
 fclose($fp);
-echo "hello\nworld";
+
+
+
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "zamowienia";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "INSERT INTO 'order'(telefon,ulica) VALUES ( $telefon,$ulica )";
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+
+
 ?>

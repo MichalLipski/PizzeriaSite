@@ -76,7 +76,7 @@ echo "<p>Witaj ".$_SESSION['user'].'! [ <a href="logout.php">Wyloguj się!</a> ]
         <div id="content">
         <object data="plik.txt" type="text/plain" width="500px" height="500px"></object>
 		
-             </div>
+        </div>
         <div id="sidebar">
             <img src=".\img\reklama.jpg" width="247">
     </div>
