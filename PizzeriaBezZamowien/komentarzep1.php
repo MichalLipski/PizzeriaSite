@@ -9,6 +9,7 @@
 	}
 	
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,59 +27,91 @@
 </head>
 
 <body>
-	
-
     <div id="whole">
     <div id="container">
-        <div id="logo" background>
-		<?php
+        <div id="logo" style="height:326px">
+            
+            
+                <?php
 
 echo "<p>Witaj ".$_SESSION['user'].'! [ <a href="logout.php">Wyloguj się!</a> ]</p>';
 
 ?>
+<img src="img/papanapis.gif">
+            
 
 <div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="file:///C:/Users/admin/Desktop/HTML/CSS%20odc2/pizzeria/menu.html">
+  <form action="zaloguj.php" method="post"> 
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     </div>
 
 
     <div class="container" style="background-color:#f1f1f1">
+        
     </div>
   </form>
-	</div>
+  
+</div>
+
         </div>
-        <div id="topbar">
-            <div id="topbarL">
-                <img src=".\img\miniLogo.jpg" width="130px" height="130px">
-            </div>
-            <div id="topbarR">
-            <img src="img/giphy.gif" height="200" width="796">
-            </div>
-            <div style="clear:both"></div>
-           
-        </div>
+
         <div id="menu">
             
-            		<a href="zamowienia.php">
-                    <div class="optionz">Zamowienia</div> </a>
-                    <a href="komentarze.php">
-                        <div class="optionz">Komentarze</div>  
-                    </a>
-                   
-                <div style="clear:both"></div>
-        </div>
+            <a href="zamowienia1.php">
+                     <div class="optionz"style="width:477px">Zamowienia</div> </a>
+                 
+             <a href="komentarzep1.php">
+                     <div class="optionz"style="width:477px">Komentarze</div> </a>
+                 <div style="clear:both"></div>
+         </div>
         
         
         
         <div id="content">
-        <object data="plik.txt" type="text/plain" width="500px" height="500px"></object>
-		
+
+	     <?php
+$con = mysql_connect("localhost","root","");
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+ 
+mysql_select_db("komentarze", $con);
+$com = 'commit';
+/* zapytanie do konkretnej tabeli */
+$wynik = mysql_query("SELECT * FROM $com")
+or die('Błąd zapytania');
+
+$par='Paragon';
+$kom='Komentarz';
+$pus="";
+if(mysql_num_rows($wynik) > 0) {
+    /* jeżeli wynik jest pozytywny, to wyświetlamy dane */
+    echo "<table cellpadding=\"2\">";
+    while($r = mysql_fetch_assoc($wynik)) {
+        echo "<tr>";
+        echo "<td>".$par."</td>";
+        echo "<td>".$pus."</td>";
+        echo "<td>".$kom."</td>";
+        echo "</tr>";
+        
+        echo "<tr>";
+        echo "<td>".$r['id_paragon']."</td>";
+        echo "<td>".$pus."</td>";
+        echo "<td>".$r['komentarz']."</td>";
+        
+        echo "</tr>";
+    }
+    echo "</table>";
+}
+
+?> 
+            
         </div>
         <div id="sidebar">
-            <img src="https://zapodaj.net/images/573fe4fedf05f.jpg" width="247">
+            <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
+            
     </div>
         <div id="footer">
                 Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!

@@ -34,8 +34,12 @@ if ($rezultat = @$polaczenie->query(
 
         unset($_SESSION['blad']);
         $rezultat->free_result();
-        header('Location: zamowienia.php');
-
+        if($login=='pracownik'){
+            header('Location: zamowienia.php');
+        }elseif($login=='kierownik'){
+            header('Location: zamowienia1.php');
+        }
+        
     }
     else{
         echo "Error: ";
