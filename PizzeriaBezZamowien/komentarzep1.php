@@ -34,7 +34,7 @@
             
                 <?php
 
-echo "<p>Witaj ".$_SESSION['user'].'! [ <a href="logout.php">Wyloguj się!</a> ]</p>';
+echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php">Wyloguj się!</a> ]</p>';
 
 ?>
 <img src="img/papanapis.gif">

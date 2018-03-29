@@ -84,8 +84,10 @@ if(mysql_num_rows($wynik) > 0) {
 
     while($r = mysql_fetch_assoc($wynik)) {
         
-        echo "Dzisiaj pizza ".$r['promo']." w każdym rozmiarze za połowe ceny" ;
-     
+         echo "<span style='color:black; font-size: 26px; font-style: italic; '>Dzisiaj w promocji pizza: </span>",
+         "<span style='color:red; font-size: 40px; font-weight:800;
+         font-style:italic;'>".$r['promo']."</span>";
+    
     }
 
 }

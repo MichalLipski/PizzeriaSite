@@ -51,7 +51,7 @@
                                     </br>
                                     <div class=”element”>
                                         <label for="psw">
-                                            <b>Haslo:</b>
+                                            <b>Haslo: </b>
                                         </label>
                                         <input type="password" placeholder="Enter Password" name="haslo">
                                     </div>
@@ -92,6 +92,7 @@
             <form action="odbierz.php" method="post">
                         <div>
                             <label for="telefon">Telefon:</label>
+                            <label>
                             <input id="telefon" name="telefon" />
                         </div>
                         <div>
