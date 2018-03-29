@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 22 Mar 2018, 16:54
+-- Czas generowania: 27 Mar 2018, 20:45
 -- Wersja serwera: 10.1.31-MariaDB
 -- Wersja PHP: 5.6.34
 
@@ -19,48 +19,46 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Baza danych: `loginy`
+-- Baza danych: `promocja`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `logowanie`
+-- Struktura tabeli dla tabeli `promotion`
 --
 
-CREATE TABLE `logowanie` (
-  `id` int(11) NOT NULL,
-  `user` text CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL,
-  `pass` text CHARACTER SET utf8 COLLATE utf8_polish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `promotion` (
+  `Id_promotion` int(11) NOT NULL,
+  `promo` text COLLATE utf8_polish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
--- Zrzut danych tabeli `logowanie`
+-- Zrzut danych tabeli `promotion`
 --
 
-INSERT INTO `logowanie` (`id`, `user`, `pass`) VALUES
-(1, 'pracownik', 'pracownik'),
-(2, 'szef', 'szef');
+INSERT INTO `promotion` (`Id_promotion`, `promo`) VALUES
+(1, 'Grecka');
 
 --
 -- Indeksy dla zrzutów tabel
 --
 
 --
--- Indeksy dla tabeli `logowanie`
+-- Indeksy dla tabeli `promotion`
 --
-ALTER TABLE `logowanie`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `promotion`
+  ADD PRIMARY KEY (`Id_promotion`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT dla tabeli `logowanie`
+-- AUTO_INCREMENT dla tabeli `promotion`
 --
-ALTER TABLE `logowanie`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `promotion`
+  MODIFY `Id_promotion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

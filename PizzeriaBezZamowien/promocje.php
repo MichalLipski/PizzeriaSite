@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <html lang="pl">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pizza Papa Malix</title>
+    <meta name ="description" content="Strona internetowa najlepszej pizzeri w Koszalinie! Papa Malix"/>
+    <meta name = "keywords" content="smaczne, jedzenie, pizza, koszalin"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="script1.js"></script>
+
+</head>
+
+<body>
+    <div id="whole">
+    <div id="container">
+        <div id="logo" background>
+            
+            <img src="img/papanapis.gif">
+                
+            
+
+<div id="id01" class="modal">
+  
+  
+</div>
+             
+                      <script>
+                      // Get the modal
+                      var modal = document.getElementById('id01');
+                      
+                      // When the user clicks anywhere outside of the modal, close it
+                      window.onclick = function(event) {
+                          if (event.target == modal) {
+                              modal.style.display = "none";
+                          }
+                      }
+                      </script>
+                      
+
+
+        </div>
+       
+        <div id="menu">
+            
+            <a href="index.php">
+                    <div class="option">Zamów pizze!</div> </a>
+                    <a href="menu.html">
+                        <div class="option">Nasze pizze</div>  
+                    </a>
+                    <a href="promocje.php">
+                        <div class="option">Promocje</div>  
+                    </a>
+                    <a href="kontakt.php">
+                        <div class="option">Kontakt</div> 
+                    </a>
+                <div style="clear:both"></div>
+        </div>
+        
+        
+        
+        <div id="content">
+
+	    <img src=".\img\promocje.png">
+            <div class="dottedLine"></div>
+            <br />
+            <?php
+$con = mysql_connect("localhost","root","");
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+ 
+mysql_select_db("promocja", $con);
+$com = 'promotion';
+/* zapytanie do konkretnej tabeli */
+$wynik = mysql_query("SELECT * FROM $com")
+or die('Błąd zapytania');
+
+if(mysql_num_rows($wynik) > 0) {
+
+    while($r = mysql_fetch_assoc($wynik)) {
+        
+        echo "Dzisiaj pizza ".$r['promo']." w każdym rozmiarze za połowe ceny" ;
+     
+    }
+
+}
+
+?> 
+<br />
+<br />
+<br />
+            <img src=".\img\promka.png" width="300px" height="300px">
+            <img src=".\img\promocja.png" width="300px" height="300px">
+            <br/>
+ 
+        </div>
+        <div id="sidebar">
+            <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
+            
+    </div>
+        <div id="footer">
+                Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
+            </div>
+    </div>
+</div>
+
+</body>
+
+</html>

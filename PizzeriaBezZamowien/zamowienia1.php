@@ -1,4 +1,16 @@
-﻿<!DOCTYPE html>
+﻿<?php
+
+	session_start();
+	
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index.php');
+		exit();
+	}
+	
+?>
+
+<!DOCTYPE html>
 <html>
 <head>
     <html lang="pl">
@@ -17,12 +29,19 @@
 <body>
     <div id="whole">
     <div id="container">
-        <div id="logo" background>
-              
+        <div id="logo" style="height:326px">
+            
+            
+                <?php
+
+echo "<p>Witaj ".$_SESSION['user'].'! [ <a href="logout.php">Wyloguj się!</a> ]</p>';
+
+?>
+<img src="img/papanapis.gif">
+            
 
 <div id="id01" class="modal">
-  
-<form action="zaloguj.php" method="post"> 
+  <form action="zaloguj.php" method="post"> 
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     </div>
@@ -33,47 +52,35 @@
     </div>
   </form>
   
-  
 </div>
 
+
         </div>
-        <div id="topbar">
-            <div id="topbarL">
-                <img src=".\img\miniLogo.jpg" width="130px" height="130px">
-            </div>
-            <div id="topbarR">
-            <img src="img/giphy.gif" height="200" width="796">
-            </div>
-            <div style="clear:both"></div>
-           
-        </div>
+
         <div id="menu">
             
-            <a href="index.php">
-                    <div class="option">Złóż zamówienie!</div> </a>
-                    <a href="menu.html">
-                        <div class="option">Menu</div>  
-                    </a>
-                    <a href="promocje.html">
-                        <div class="option">Promocje</div>  
-                    </a>
-                    <a href="kontakt.php">
-                        <div class="option">Kontakt</div> 
-                    </a>
+           <a href="zamowienia1.php">
+                    <div class="optionz"style="width:477px">Zamowienia</div> </a>
+                
+			<a href="komentarzep1.php">
+                    <div class="optionz"style="width:477px">Komentarze</div> </a>
                 <div style="clear:both"></div>
         </div>
         
         
         
         <div id="content">
-        <form action="kodbierz.php" method="post">
+
+	    <form action="kodbierz.php" method="post">
         <div><label for="paragon">Numer z paragonu:</label><input id="paragon" name="paragon" /></div>
         <textarea name="tresc" rows="5" cols="50">Fragment tekstu</textarea>
         <div><input type="submit" value="Wyślij" /></div>
          </form>
+            
         </div>
         <div id="sidebar">
-            <img src="https://zapodaj.net/images/573fe4fedf05f.jpg" width="247">
+            <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
+            
     </div>
         <div id="footer">
                 Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
