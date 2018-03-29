@@ -92,7 +92,6 @@
             <form action="odbierz.php" method="post">
                         <div>
                             <label for="telefon">Telefon:</label>
-                            <label>
                             <input id="telefon" name="telefon" />
                         </div>
                         <div>

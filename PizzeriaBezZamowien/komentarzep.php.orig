@@ -34,7 +34,11 @@
             
                 <?php
 
-echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php" style="text-decoration: none">Wyloguj się!</a> ]</p>';
+<<<<<<< HEAD
+echo "<p>Witaj ".$_SESSION['user'].'! [ <a href="logout.php">Wyloguj się!</a> ]</p>';
+=======
+echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php">Wyloguj się!</a> ]</p>';
+>>>>>>> dev
 
 ?>
 <img src="img/papanapis.gif">
@@ -54,16 +58,17 @@ echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php" style="text-decorat
   
 </div>
 
-
         </div>
 
         <div id="menu">
             
-           <a href="zamowienia1.php">
-                    <div class="optionz"style="width:477px">Zamowienia</div> </a>
-                
-			<a href="komentarzep1.php">
-                    <div class="optionz"style="width:477px">Komentarze</div> </a>
+           <a href="zamowienia.php">
+                    <div class="optionz">Zamowienia</div> </a>
+                    <a href="promocjep.php">
+                        <div class="optionz">Promocje</div>  
+                    </a>
+			<a href="komentarzep.php">
+                    <div class="optionz">Komentarze</div> </a>
                 <div style="clear:both"></div>
         </div>
         
@@ -71,11 +76,43 @@ echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php" style="text-decorat
         
         <div id="content">
 
-	    <form action="kodbierz.php" method="post">
-        <div><label for="paragon">Numer z paragonu:</label><input id="paragon" name="paragon" /></div>
-        <textarea name="tresc" rows="5" cols="50">Fragment tekstu</textarea>
-        <div><input type="submit" value="Wyślij" /></div>
-         </form>
+	    	     <?php
+$con = mysql_connect("localhost","root","");
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+ 
+mysql_select_db("komentarze", $con);
+$com = 'commit';
+/* zapytanie do konkretnej tabeli */
+$wynik = mysql_query("SELECT * FROM $com")
+or die('Błąd zapytania');
+
+$par='Paragon';
+$kom='Komentarz';
+$pus="";
+if(mysql_num_rows($wynik) > 0) {
+    /* jeżeli wynik jest pozytywny, to wyświetlamy dane */
+    echo "<table cellpadding=\"2\">";
+    while($r = mysql_fetch_assoc($wynik)) {
+        echo "<tr>";
+        echo "<td>".$par."</td>";
+        echo "<td>".$pus."</td>";
+        echo "<td>".$kom."</td>";
+        echo "</tr>";
+        
+        echo "<tr>";
+        echo "<td>".$r['id_paragon']."</td>";
+        echo "<td>".$pus."</td>";
+        echo "<td>".$r['komentarz']."</td>";
+        
+        echo "</tr>";
+    }
+    echo "</table>";
+}
+
+?> 
             
         </div>
         <div id="sidebar">

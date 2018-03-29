@@ -51,7 +51,7 @@
                                     </br>
                                     <div class=”element”>
                                         <label for="psw">
-                                            <b>Haslo:</b>
+                                            <b>Haslo: </b>
                                         </label>
                                         <input type="password" placeholder="Enter Password" name="haslo">
                                     </div>

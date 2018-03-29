@@ -51,7 +51,11 @@
                                     </br>
                                     <div class=”element”>
                                         <label for="psw">
+<<<<<<< HEAD
                                             <b>Haslo:</b>
+=======
+                                            <b>Haslo: </b>
+>>>>>>> dev
                                         </label>
                                         <input type="password" placeholder="Enter Password" name="haslo">
                                     </div>
@@ -92,7 +96,10 @@
             <form action="odbierz.php" method="post">
                         <div>
                             <label for="telefon">Telefon:</label>
+<<<<<<< HEAD
+=======
                             <label>
+>>>>>>> dev
                             <input id="telefon" name="telefon" />
                         </div>
                         <div>
