@@ -16,13 +16,14 @@ body
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #EEE;
 
 }
 
 
 #logo
 {
-    border-bottom: #BA0703 solid 3px;
+    border-bottom: #AE1506 solid 3px;
     background-image: url("img/nowyheader3.png");
     min-height: 300px;
     
@@ -33,7 +34,7 @@ body
 {
     color: #FFFFFF;
     width: 1000px;
-    border-bottom: #BA0703 solid 3px;
+    border-bottom: #AE1506 solid 3px;
     
 }
 .option
@@ -46,21 +47,7 @@ body
     padding: 10px;
     opacity: 0.9;
     text-align: center;
-    color: 	#B68A48
-}
-
-.optionz
-{
-    background-color:	#AE1506;
-    float: left;
-    width: 31%;
-    height: 25px;
-    font-size: 18px;
-    padding: 10px;
-    opacity: 0.8;
-    text-align: center;
-    border-left: black 3px solid;
-    color: 	rgb(255, 254, 251)
+    color: white;
 }
 .option:hover
 {

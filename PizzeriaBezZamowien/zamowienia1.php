@@ -57,15 +57,15 @@ echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php" style="text-decorat
 
         </div>
 
-        <div id="menu">
+         <div id="menu" style="background-color:#AE1506">
             
-           <a href="zamowienia1.php">
-                    <div class="optionz"style="width:477px">Zamowienia</div> </a>
-                
-			<a href="komentarzep1.php">
-                    <div class="optionz"style="width:477px">Komentarze</div> </a>
-                <div style="clear:both"></div>
-        </div>
+            <a href="zamowienia1.php">
+                     <div class="option"style="width:478px; color:yellow; background-color:#CB0602">Zamowienia</div> </a>
+                 
+             <a href="komentarzep1.php">
+                     <div class="option"style="width:478px">Komentarze</div> </a>
+                 <div style="clear:both"></div>
+         </div> 
         
         
         

@@ -28,17 +28,7 @@
   
 </div>
              
-                      <script>
-                      // Get the modal
-                      var modal = document.getElementById('id01');
-                      
-                      // When the user clicks anywhere outside of the modal, close it
-                      window.onclick = function(event) {
-                          if (event.target == modal) {
-                              modal.style.display = "none";
-                          }
-                      }
-                      </script>
+ 
                       
 
 
@@ -52,7 +42,7 @@
                         <div class="option">Nasze pizze</div>  
                     </a>
                     <a href="promocje.php">
-                        <div class="option">Promocje</div>  
+                        <div class="option"style="color:yellow; background-color:#CB0602">Promocje</div>  
                     </a>
                     <a href="kontakt.php">
                         <div class="option">Kontakt</div> 

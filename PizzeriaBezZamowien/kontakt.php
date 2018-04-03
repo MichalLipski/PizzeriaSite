@@ -37,7 +37,7 @@
                     <div class="option">Promocje</div>
                 </a>
                 <a href="kontakt.php">
-                    <div class="option">Kontakt</div>
+                    <div class="option"style="color:yellow; background-color:#CB0602">Kontakt</div>
                 </a>
                 <div style="clear:both"></div>
             </div>

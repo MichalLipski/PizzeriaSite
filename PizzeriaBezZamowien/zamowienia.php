@@ -59,19 +59,20 @@ echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php">Wyloguj się!</a> ]
 
                 </div>
 
-                <div id="menu">
+                <div id="menu" style="background-color:#AE1506">
 
                     <a href="zamowienia.php">
-                        <div class="optionz">Zamowienia</div>
+                        <div class="option" style="width:313px; color:yellow; background-color:#CB0602">Zamowienia</div>
                     </a>
                     <a href="promocjep.php">
-                        <div class="optionz">Promocje</div>
+                        <div class="option" style="width:313px">Promocje</div>
                     </a>
                     <a href="komentarzep.php">
-                        <div class="optionz">Komentarze</div>
+                        <div class="option" style="width:313px">Komentarze</div>
                     </a>
                     <div style="clear:both"></div>
                 </div>
+
 
 
 

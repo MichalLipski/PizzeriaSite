@@ -9,30 +9,32 @@
 	}
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <html lang="pl">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pizza Papa Malix</title>
-    <meta name ="description" content="Strona internetowa najlepszej pizzeri w Koszalinie! Papa Malix"/>
-    <meta name = "keywords" content="smaczne, jedzenie, pizza, koszalin"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script src="script1.js"></script>
+    <!DOCTYPE html>
+    <html>
 
-</head>
+    <head>
+        <html lang="pl" ng-app="agendaEditor">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pizza Papa Malix</title>
+        <meta name="description" content="Strona internetowa najlepszej pizzeri w Koszalinie! Papa Malix" />
+        <meta name="keywords" content="smaczne, jedzenie, pizza, koszalin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script src="controller.js"></script>
 
-<body ng-controller="formCtrl">
-    <div id="whole">
-    <div id="container">
-        <div id="logo" background>
-<img src="img/papanapis.gif">
-                <button type="button" id="button1" style="float:right;" onclick="document.getElementById('id01').style.display='block'">Zaloguj</button>
-                <!--saaaaaaaassssssalllllllllllllllllllllllllllllllllllllllllllll -->
-            
+    </head>
+
+    <body ng-controller="formCtrl">
+        <div id="whole">
+            <div id="container">
+                <div id="logo" background>
+                    <img src="img/papanapis.gif">
+                    <button type="button" id="button1" style="float:right;" onclick="document.getElementById('id01').style.display='block'">Zaloguj</button>
+                    <!--saaaaaaaassssssalllllllllllllllllllllllllllllllllllllllllllll -->
+
 
 
                     <div id="id01" class="modal">
@@ -64,58 +66,101 @@
  if(isset($_SESSION['blad'])) echo $_SESSION['blad'];
     ?>
                         </div>
-                
-                        </div>
-        </div>
-    
-        <div id="menu">
-            
-            <a href="index.php">
-                    <div class="option">Zamów pizze!</div> </a>
+
+                    </div>
+                </div>
+
+                <div id="menu">
+
+                    <a href="index.php">
+                        <div class="option" style="color:yellow; background-color:#CB0602">Zamów pizze!</div>
+                    </a>
                     <a href="menu.html">
-                        <div class="option">Nasze pizze</div>  
+                        <div class="option">Nasze pizze</div>
                     </a>
                     <a href="promocje.php">
-                        <div class="option">Promocje</div>  
+                        <div class="option">Promocje</div>
                     </a>
                     <a href="kontakt.php">
-                        <div class="option">Kontakt</div> 
+                        <div class="option">Kontakt</div>
                     </a>
-                <div style="clear:both"></div>
-        </div>
-        
-        
-        
-        <div id="content">
-            <img src=".\img\zamawiam.png">
-            <div class="dottedLine"></div>
-            <form action="odbierz.php" method="post">
+                    <div style="clear:both"></div>
+                </div>
+
+
+
+                <div id="content">
+                    <img src=".\img\zamawiam.png">
+                    <div class="dottedLine"></div>
+                    <form action="odbierz.php" method="post">
                         <div>
-                            <label for="telefon">Telefon:</label>
+                            <label for="telefon">Telefon* </label>
                             <label>
-                            <input id="telefon" name="telefon" />
+                                <input id="telefon" name="telefon" />
                         </div>
+                        <br />
                         <div>
-                            <label for="ulica">Ulica i nr domu:</label>
+                            <label for="ulica">Ulica* </label>
                             <input id="ulica" name="ulica" />
+                            <label for="ulica"> Nr domu* </label>
+                            <input id="ulica" name="ulica" size="10" />
+                            <label for="ulica"> Nr mieszkania </label>
+                            <input id="ulica" name="ulica" size="10" />
                         </div>
+                        <br />
+                        <table>
+		<tr>
+			<td>Pizza: </td>
+			<td>Rozmiar: </td>
+			<td>Ilość: </td>
+			<td></td>
+		</tr>
+		<tr ng-repeat="item in list" ng-click="$last && addItem()">
+			<td> 
+                      <select name="wybor" ng-model="item.title">
+                            <option value="Apollo">Apollo</option>
+                            <option value="Amerykanska">Amerykanska</option>
+                            <option value="Everest">Everest</option>
+                            <option value="Peperoni">Peperoni</option>
+                            <option value="Cukinio">Cukinio</option>
+                            <option value="FireBall">FireBall</option>
+                            <option value="Trzy sery">Trzy sery</option>
+                            <option value="Grecka">Grecka</option>
+                            <option value="Capricciosa">Capricciosa</option>
+                            <option value="Tomato">Tomato</option>
+                            <option value="Zbójnicka">Zbójnicka</option>
+                            <option value="Vegetariana">Vegetariana</option>
 
-
+                        </select>
+                        </td>
+			<td>
+            <select name="wybor" ng-model="item.name">
+                            <option value="Mała">Mała</option>
+                            <option value="Średnia">Średnia</option>
+                            <option value="Duża">Duża</option>
+                        </select>
+                        </td>
+			<td><input type="text" ng-model="item.surname"></td>
+			<td ng-if="!$first"><button ng-click="list.splice($index, 1)">-</button></td>
+		</tr>
+	</table>
+    Wynik:
+	<div ng-repeat="item in myResult() track by $index">{{item}}<br /></div>
                         <div>
                             <input type="submit" value="Wyślij" name="submit" />
                         </div>
                     </form>
-        </div>
-        <div id="sidebar">
-            <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
-            
-    </div>
-        <div id="footer">
-                Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
+                </div>
+                <div id="sidebar">
+                    <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
+
+                </div>
+                <div id="footer">
+                    Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
+                </div>
             </div>
-    </div>
-</div>
+        </div>
 
-</body>
+    </body>
 
-</html>
+    </html>
