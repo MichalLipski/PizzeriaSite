@@ -44,8 +44,8 @@
 
 
 
-            <div id="content">
-            Telefon: 123-456-789
+            <div id="content2">
+            <span style="color: #23613C; font-size: 30px;">Telefon:</span> <span style="font-size: 30px;">123-456-789</span>
             <br />
             <br />
                 <form action="kodbierz.php" method="post">
@@ -55,7 +55,7 @@
                     </div>
                     <textarea name="tresc" rows="5" cols="50">Fragment tekstu</textarea>
                     <div>
-                        <input type="submit" value="Wyślij" />
+                        <input type="submit" id="wyslij" value="Wyślij" />
                     </div>
                 </form>
                 <br/>
@@ -64,10 +64,10 @@
 
 
             </div>
-            <div id="sidebar">
-                <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
-
-            </div>
+            <!-- <div id="sidebar" style="border: none;">
+               
+                    <span style="sidebar{background-color: #EEE;}"></span>
+            </div> -->
             <div id="footer">
                 Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
             </div>

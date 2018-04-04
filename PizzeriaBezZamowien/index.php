@@ -48,7 +48,7 @@
                                         <label for="uname">
                                             <b>Login: </b>
                                         </label>
-                                        <input type="text" placeholder="Enter Username" name="login">
+                                        <input type="text" id="text" placeholder="Enter Username" name="login">
                                     </div>
                                     </br>
                                     <div class=”element”>
@@ -94,18 +94,17 @@
                     <div class="dottedLine"></div>
                     <form action="odbierz.php" method="post">
                         <div>
-                            <label for="telefon">Telefon* </label>
+                            
                             <label>
-                                <input id="telefon" name="telefon" />
+                                <input id="telefon" name="telefon" placeholder="Telefon:" onfocus="this.placeholder='';" onblur="this.placeholder='Telefon:';" />
                         </div>
-                        <br />
                         <div>
-                            <label for="ulica">Ulica* </label>
-                            <input id="ulica" name="ulica" />
-                            <label for="ulica"> Nr domu* </label>
-                            <input id="ulica" name="ulica" size="10" />
-                            <label for="ulica"> Nr mieszkania </label>
-                            <input id="ulica" name="ulica" size="10" />
+                            <!-- <label for="ulica">Ulica* </label> -->
+                            <input id="ulica" name="ulica" placeholder="Ulica :" onfocus="this.placeholder='';" onblur="this.placeholder='Ulica: ';" /><br/>
+                            <!-- <label for="ulica"> Nr domu* </label> -->
+                            <input id="ulica" name="ulica" size="10" placeholder="Nr domu: " onfocus="this.placeholder='';" onblur="this.placeholder='Nr domu: ';" /><br/>
+                            <!-- <label for="ulica"> Nr mieszkania </label> -->
+                            <input id="ulica" name="ulica" size="10" placeholder="Nr mieszkania: " onfocus="this.placeholder='';" onblur="this.placeholder='Nr mieszkania: ';" /><br/>
                         </div>
                         <br />
                         <table>
@@ -140,14 +139,14 @@
                             <option value="Duża">Duża</option>
                         </select>
                         </td>
-			<td><input type="text" ng-model="item.surname"></td>
+			<td><input type="text" id="paragon" ng-model="item.surname"></td>
 			<td ng-if="!$first"><button ng-click="list.splice($index, 1)">-</button></td>
 		</tr>
 	</table>
     Wynik:
 	<div ng-repeat="item in myResult() track by $index">{{item}}<br /></div>
                         <div>
-                            <input type="submit" value="Wyślij" name="submit" />
+                            <input type="submit" id="wyslij" value="Wyślij" name="submit" />
                         </div>
                     </form>
                 </div>
