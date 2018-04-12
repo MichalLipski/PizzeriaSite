@@ -76,7 +76,7 @@ if (!$con)
   {
   die('Could not connect: ' . mysql_error());
   }
- 
+  mysql_set_charset('utf8',$con); 
 mysql_select_db("komentarze", $con);
 $com = 'commit';
 /* zapytanie do konkretnej tabeli */
@@ -109,10 +109,7 @@ if(mysql_num_rows($wynik) > 0) {
 ?> 
             
         </div>
-        <div id="sidebar">
-            <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
-            
-    </div>
+     
         <div id="footer">
                 Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
             </div>

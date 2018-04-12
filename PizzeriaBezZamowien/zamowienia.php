@@ -38,7 +38,7 @@
 echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php">Wyloguj się!</a> ]</p>';
 
 ?>
-                        <img src="img/papanapis.gif">
+                        <img src="img/papanapis.gif" style="margin-left:-15px; margin-top:-15px;">
 
 
                         <div id="id01" class="modal">
@@ -81,7 +81,7 @@ echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php">Wyloguj się!</a> ]
                     <!--  -->
                 </div>
                 <div id="sidebar">
-                    <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
+                    <img src="https://zapodaj.net/images/bf45b73492fb8.jpg">
 
                 </div>
                 <div id="footer">

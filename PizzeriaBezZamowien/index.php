@@ -31,34 +31,34 @@
         <div id="whole">
             <div id="container">
                 <div id="logo" background>
-                    <img src="img/papanapis.gif">
+                    <img src="img/papanapis.gif" style="margin-left:-15px" />
                     <button type="button" id="button1" style="float:right;" onclick="document.getElementById('id01').style.display='block'">Zaloguj</button>
                     <!--saaaaaaaassssssalllllllllllllllllllllllllllllllllllllllllllll -->
 
 
 
-                    <div id="id01" class="modal">
-                        <div id=”wrapper”>
+                    <div id="id01" class="modal"style="width:325px; height:260px">
+                        <div id=”wrapper” >
                             <form action="zaloguj.php" method="post">
                                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                                <div class=”content”>
+                                <div class=”content” style="border: 1px solid black;width:300px">
                                     <br/>
                                     <br/>
-                                    <div class=”element”>
+                                    <div class=”element” style="margin-left:15px">
                                         <label for="uname">
                                             <b>Login: </b>
                                         </label>
                                         <input type="text" id="text" placeholder="Enter Username" name="login">
                                     </div>
                                     </br>
-                                    <div class=”element”>
+                                    <div class=”element” style="margin-left:15px">
                                         <label for="psw">
                                             <b>Haslo: </b>
                                         </label>
                                         <input type="password" placeholder="Enter Password" name="haslo">
                                     </div>
                                     <div id="zalogujsie">
-                                        <input type="submit" value="Zaloguj" />
+                                        <input type="submit" id="wyslij" value="Zaloguj" />
                                     </div>
                                 </div>
                             </form>
