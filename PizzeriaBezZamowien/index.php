@@ -100,7 +100,7 @@
                         </div>
                         <div>
                             <!-- <label for="ulica">Ulica* </label> -->
-                            <input id="ulica" name="ulica" placeholder="Ulica :" onfocus="this.placeholder='';" onblur="this.placeholder='Ulica: ';" /><br/>
+                            <input id="ulica" name="ulica" placeholder="Ulica:" onfocus="this.placeholder='';" onblur="this.placeholder='Ulica: ';" /><br/>
                             <!-- <label for="ulica"> Nr domu* </label> -->
                             <input id="ulica" name="ulica" size="10" placeholder="Nr domu: " onfocus="this.placeholder='';" onblur="this.placeholder='Nr domu: ';" /><br/>
                             <!-- <label for="ulica"> Nr mieszkania </label> -->
@@ -122,7 +122,7 @@
                             <option value="Everest">Everest</option>
                             <option value="Peperoni">Peperoni</option>
                             <option value="Cukinio">Cukinio</option>
-                            <option value="FireBall">FireBall</option>
+                            <option value="FireBall">Fireball</option>
                             <option value="Trzy sery">Trzy sery</option>
                             <option value="Grecka">Grecka</option>
                             <option value="Capricciosa">Capricciosa</option>
@@ -151,7 +151,7 @@
                     </form>
                 </div>
                 <div id="sidebar">
-                    <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
+                    <img src="https://zapodaj.net/images/bf45b73492fb8.jpg">
 
                 </div>
                 <div id="footer">
