@@ -56,13 +56,13 @@ echo "<p>Witaj ".$_SESSION['user'].'! [ <a href="logout.php">Wyloguj się!</a> ]
 
         </div>
 
-        <div id="menu">
+        <div id="menu" style="background-color:#AE1506">
             
             <a href="zamowienia1.php">
-                     <div class="optionz"style="width:477px">Zamowienia</div> </a>
+                     <div class="option"style="width:478px">Zamowienia</div> </a>
                  
              <a href="komentarzep1.php">
-                     <div class="optionz"style="width:477px">Komentarze</div> </a>
+                     <div class="option" style="width:478px; color:yellow; background-color:#CB0602">Komentarze</div> </a>
                  <div style="clear:both"></div>
          </div>
         
@@ -76,7 +76,7 @@ if (!$con)
   {
   die('Could not connect: ' . mysql_error());
   }
- 
+  mysql_set_charset('utf8',$con); 
 mysql_select_db("komentarze", $con);
 $com = 'commit';
 /* zapytanie do konkretnej tabeli */
@@ -109,10 +109,7 @@ if(mysql_num_rows($wynik) > 0) {
 ?> 
             
         </div>
-        <div id="sidebar">
-            <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
-            
-    </div>
+     
         <div id="footer">
                 Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
             </div>

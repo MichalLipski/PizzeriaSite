@@ -10,70 +10,75 @@
 	
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <html lang="pl">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pizza Papa Malix</title>
-    <meta name ="description" content="Strona internetowa najlepszej pizzeri w Koszalinie! Papa Malix"/>
-    <meta name = "keywords" content="smaczne, jedzenie, pizza, koszalin"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script src="script1.js"></script>
+    <!DOCTYPE html>
+    <html>
 
-</head>
+    <head>
+        <html lang="pl">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pizza Papa Malix</title>
+        <meta name="description" content="Strona internetowa najlepszej pizzeri w Koszalinie! Papa Malix" />
+        <meta name="keywords" content="smaczne, jedzenie, pizza, koszalin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <script src="script1.js"></script>
 
-<body>
-    <div id="whole">
-    <div id="container">
-        <div id="logo" style="height:326px">
-            
-            
-                <?php
+    </head>
+
+    <body>
+        <div id="whole">
+            <div id="container">
+                <div id="logo" style="height:326px">
+
+
+                    <?php
 
 echo "<p>Witaj ".$_SESSION['user'].'! [ <a href="logout.php">Wyloguj się!</a> ]</p>';
 
 ?>
-<img src="img/papanapis.gif">
-            
-
-<div id="id01" class="modal">
-  <form action="zaloguj.php" method="post"> 
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-    </div>
+                        <img src="img/papanapis.gif" style="margin-left:-15px; margin-top:-15px;">
 
 
-    <div class="container" style="background-color:#f1f1f1">
-        
-    </div>
-  </form>
-  
-</div>
+                        <div id="id01" class="modal">
+                            <form action="zaloguj.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                </div>
 
-        </div>
 
-        <div id="menu">
-            
-           <a href="zamowienia.php">
-                    <div class="optionz">Zamowienia</div> </a>
-                    <a href="promocjep.php">
-                        <div class="optionz">Promocje</div>  
+                                <div class="container" style="background-color:#f1f1f1">
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                </div>
+
+                <div id="menu" style="background-color:#AE1506">
+                <a href="zamowienia.php">
+                        <div class="option" style="width:313px">Zamowienia</div>
                     </a>
-			<a href="komentarzep.php">
-                    <div class="optionz">Komentarze</div> </a>
-                <div style="clear:both"></div>
-        </div>
-        
-        
-        
-        <div id="content">
+                    <a href="promocjep.php">
+                        <div class="option" style="width:313px">Promocje</div>
+                    </a>
+                    <a href="komentarzep.php">
+                        <div class="option" style="width:313px; color:yellow; background-color:#CB0602">Komentarze</div>
+                    </a>
+                    <div style="clear:both"></div>
+                </div>
 
-	    	     <?php
+
+
+
+                <div id="content">
+
+                    <?php
+                 header("Content-Type: text/html; charset=UTF-8");    
 $con = mysql_connect("localhost","root","");
+mysql_set_charset('utf8',$con); 
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
@@ -92,6 +97,7 @@ if(mysql_num_rows($wynik) > 0) {
     /* jeżeli wynik jest pozytywny, to wyświetlamy dane */
     echo "<table cellpadding=\"2\">";
     while($r = mysql_fetch_assoc($wynik)) {
+        
         echo "<tr>";
         echo "<td>".$par."</td>";
         echo "<td>".$pus."</td>";
@@ -108,19 +114,16 @@ if(mysql_num_rows($wynik) > 0) {
     echo "</table>";
 }
 
-?> 
-            
-        </div>
-        <div id="sidebar">
-            <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
-            
-    </div>
-        <div id="footer">
-                Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
+?>
+
+                </div>
+             
+                <div id="footer">
+                    Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
+                </div>
             </div>
-    </div>
-</div>
+        </div>
 
-</body>
+    </body>
 
-</html>
+    </html>

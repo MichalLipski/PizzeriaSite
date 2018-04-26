@@ -1,22 +1,31 @@
 body
 {
-    background-color: black;
+    margin: 0px;
+    background: url("img/green.png")
+    , url("img/red.png");
     font-family: 'Lato', sans-serif;
+    background-position: left, right;
+    background-repeat: repeat-y, repeat-y;
+    background-size: 17%;
     
 }
 
+
 #container
 {
+    margin-top: 0px;
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fff;
 
 }
 
+
 #logo
 {
-    border-bottom: #BA0703 solid 3px;
-    background-image: url("img/nowyheader.png");
+    border-bottom: #AE1506 solid 3px;
+    background-image: url("img/nowyheader3.png");
     min-height: 300px;
     
     
@@ -24,24 +33,22 @@ body
 
 #menu
 {
-    margin-top: 20px;
     color: #FFFFFF;
     width: 1000px;
-    border-right: black inset;
+    border-bottom: #AE1506 solid 3px;
     
 }
 .option
 {
     background-color:	#AE1506;
     float: left;
-    width: 227px;
+    width: 230px;
     height: 25px;
     font-size: 18px;
     padding: 10px;
-    opacity: 0.8;
+    opacity: 0.9;
     text-align: center;
-    border-left: black 3px solid;
-    color: 	#B68A48
+    color: white;
 }
 .option:hover
 {
@@ -52,15 +59,14 @@ body
 #topbar
 {
     background-color: black;
-    color: white;
-    padding: 10px;
-    height: 170px;
+    color: white; 
+    height: 180px;
     
 }
 #topbarL
 {
     float: left;
-    padding: 20px;
+    
     width: 138px;
     text-align: center;
     margin-top: 30px;
@@ -70,7 +76,6 @@ body
 #topbarR
 {
     float: left;
-    padding: 18px;
     width: 760px;
     font-size: 16px;
     text-align: justify;
@@ -78,27 +83,39 @@ body
 
 #sidebar
 {
-    margin-top: 2px;
     float: left;
-    padding: 3px;
-    width: 200px;
-    background-color: black;
+    width: 250px;
+    background-color: #ffffff;
     text-align: center;
     font-size: 18px;
-    min-height: 1038px;
+    min-height: 1046px;
+    border-left: #ddd solid 1px;
     
 }
 
 #content
 {
-    color: white;
+    color:black;
+    background-color: #ffffff;
     float: left;
     padding: 40px;
-    width: 670px;
-    background-color:black;
-    min-height: 580px;
+    width: 667px;
     text-align: justify;
+    height: 966px;
+    overflow-y: auto;
+    overflow-x: hidden;
 
+}
+#content2
+{
+    color:black;
+    background-color: #ffffff;
+    float: left;
+    padding: 40px;
+    width: 917px;
+    text-align: center;
+    height: 966px;
+    overflow: auto;
 
 }
 
@@ -133,19 +150,19 @@ body
 }
 a:link
 {
-    color: white;
+    color: black;
 
 }
 
 a:visited
 {
-    color:white;
+    color:black;
     
 }
 
 a:hover
 {
-    color:yellow;
+    color:red;
 
 }
 .option:hover
@@ -173,24 +190,28 @@ a > .option
 
 /* -------------------------------------------------------------------------- */
 input[type=text], input[type=password] {
-    width: 100%;
+    width: 200px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
-/* Set a style for all buttons */
-/* button {
-    background-color: black;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
+#zalogujsie{
     width: 100%;
-} */
+    text-align: center;
+}
+#wrapper
+{
+background:#ffffff;
+width:500px;
+margin:140px 200px;
+border:1px solid #999999;
+text-align: center;
+float:none;
+}
+
+
 
 button:hover {
     opacity: 0.8;
@@ -211,13 +232,14 @@ span.psw {
 
 /* The Modal (background) */
 .modal {
+    background-color: #FFFFFF;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 64%;
     top: 1%;
-    width: 400px; /* Full width */
-    height: 350px; /* Full height */
+    width: 300px; /* Full width */
+    height: 220px; /* Full height */
     overflow: auto; /* Enable scroll if needed */
 
 
@@ -271,4 +293,156 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
+}
+
+#ulica
+{
+    width: 300px;
+    background-color: #efefef;
+    color: #000;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+}
+#telefon
+{
+    width: 300px;
+    background-color: #efefef;
+    color: #000;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+
+}
+select
+{
+    background-color: #efefef;
+    color: #000;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+
+}
+
+#wyslij
+{
+    width: 205px;
+    background-color: #23613C;
+    font-size: 20px;
+    color: white;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+    margin-top: 20px;
+} 
+#paragon
+{
+    width: 60px;
+    background-color: #efefef;
+    color: #000;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 15px;
+}
+textarea
+{
+    width: 300px;
+    background-color: #efefef;
+    color: #000;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 15px;
+
+}
+
+ul li{ list-style: none;}
+ 
+.form-in-line {
+    display: inline-block;
+    margin-right: 1px;
+    
+}
+
+.labels {
+    display: block;
+}
+
+.pizzaContainer {
+    display: block;
+}
+
+#deleteFirstPizza{
+    width: 205px;
+    background-color: #23613C;
+    font-size: 20px;
+    color: white;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+    margin-top: 20px;
+
+}
+#addNewPizzaBtn{
+    width: 205px;
+    background-color: #23613C;
+    font-size: 20px;
+    color: white;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+    margin-top: 20px;
+}
+
+#zapispizza{
+    width: 160px;
+    height: 46px;
+    background-color: #23613C;
+    font-size: 20px;
+    color: white;
+
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+    margin-top: 20px;
+}
+
+#pizzaAmount{
+    height: 45px;
+    width: 100px;
+    padding: 2px;
 }

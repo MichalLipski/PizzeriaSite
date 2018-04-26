@@ -1,12 +1,12 @@
 body
 {
     margin: 0px;
-    background: url("http://mjnewground.org/wp-content/themes/politicize/framework/images/pattern/pattern-10.png")
-    , url("img/pattern.png");
+    background: url("img/green.png")
+    , url("img/red.png");
     font-family: 'Lato', sans-serif;
     background-position: left, right;
     background-repeat: repeat-y, repeat-y;
-    background-size: 13.1%;
+    background-size: 17%;
     
 }
 
@@ -16,13 +16,14 @@ body
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fff;
 
 }
 
 
 #logo
 {
-    border-bottom: #BA0703 solid 3px;
+    border-bottom: #AE1506 solid 3px;
     background-image: url("img/nowyheader3.png");
     min-height: 300px;
     
@@ -33,7 +34,7 @@ body
 {
     color: #FFFFFF;
     width: 1000px;
-    border-bottom: #BA0703 solid 3px;
+    border-bottom: #AE1506 solid 3px;
     
 }
 .option
@@ -46,21 +47,7 @@ body
     padding: 10px;
     opacity: 0.9;
     text-align: center;
-    color: 	#B68A48
-}
-
-.optionz
-{
-    background-color:	#AE1506;
-    float: left;
-    width: 31%;
-    height: 25px;
-    font-size: 18px;
-    padding: 10px;
-    opacity: 0.8;
-    text-align: center;
-    border-left: black 3px solid;
-    color: 	rgb(255, 254, 251)
+    color: white;
 }
 .option:hover
 {
@@ -101,19 +88,32 @@ body
     text-align: center;
     font-size: 18px;
     min-height: 1046px;
-    border-left: #BA0703 solid 3px;
+    border-left: #ddd solid 1px;
     
 }
 
 #content
 {
     color:black;
-    background-color: #EEE;
+    background-color: #ffffff;
     float: left;
     padding: 40px;
     width: 667px;
-    min-height: 580px;
     text-align: justify;
+    height: 966px;
+    overflow: auto;
+
+}
+#content2
+{
+    color:black;
+    background-color: #ffffff;
+    float: left;
+    padding: 40px;
+    width: 917px;
+    text-align: center;
+    height: 966px;
+    overflow: auto;
 
 }
 
@@ -291,4 +291,101 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
+}
+
+#ulica
+{
+    width: 300px;
+    background-color: #efefef;
+    color: #000;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+}
+#telefon
+{
+    width: 300px;
+    background-color: #efefef;
+    color: #000;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+
+}
+select
+{
+    background-color: #efefef;
+    color: #000;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+
+}
+/* input[type=text]
+{
+    width: 60px;
+    background-color: #efefef;
+    color: #CB0602;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 15px;
+
+}  */
+#wyslij
+{
+    width: 300px;
+    background-color: #23613C;
+    font-size: 20px;
+    color: white;
+    padding: 15px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+    margin-top: 20px;
+} 
+#paragon
+{
+    width: 60px;
+    background-color: #efefef;
+    color: #000;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 15px;
+}
+textarea
+{
+    width: 300px;
+    background-color: #efefef;
+    color: #000;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 15px;
+
 }

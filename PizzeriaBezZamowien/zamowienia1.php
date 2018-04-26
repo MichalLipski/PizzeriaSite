@@ -57,29 +57,23 @@ echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php" style="text-decorat
 
         </div>
 
-        <div id="menu">
+         <div id="menu" style="background-color:#AE1506">
             
-           <a href="zamowienia1.php">
-                    <div class="optionz"style="width:477px">Zamowienia</div> </a>
-                
-			<a href="komentarzep1.php">
-                    <div class="optionz"style="width:477px">Komentarze</div> </a>
-                <div style="clear:both"></div>
-        </div>
+            <a href="zamowienia1.php">
+                     <div class="option"style="width:478px; color:yellow; background-color:#CB0602">Zamowienia</div> </a>
+                 
+             <a href="komentarzep1.php">
+                     <div class="option"style="width:478px">Komentarze</div> </a>
+                 <div style="clear:both"></div>
+         </div> 
         
         
         
         <div id="content">
 
-	    <form action="kodbierz.php" method="post">
-        <div><label for="paragon">Numer z paragonu:</label><input id="paragon" name="paragon" /></div>
-        <textarea name="tresc" rows="5" cols="50">Fragment tekstu</textarea>
-        <div><input type="submit" value="Wyślij" /></div>
-         </form>
-            
         </div>
         <div id="sidebar">
-            <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
+        <img src="https://zapodaj.net/images/bf45b73492fb8.jpg">
             
     </div>
         <div id="footer">

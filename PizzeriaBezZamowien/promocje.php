@@ -19,7 +19,7 @@
     <div id="container">
         <div id="logo" background>
             
-            <img src="img/papanapis.gif">
+            <img src="img/papanapis.gif" style="margin-left:-15px">
                 
             
 
@@ -28,19 +28,6 @@
   
 </div>
              
-                      <script>
-                      // Get the modal
-                      var modal = document.getElementById('id01');
-                      
-                      // When the user clicks anywhere outside of the modal, close it
-                      window.onclick = function(event) {
-                          if (event.target == modal) {
-                              modal.style.display = "none";
-                          }
-                      }
-                      </script>
-                      
-
 
         </div>
        
@@ -52,7 +39,7 @@
                         <div class="option">Nasze pizze</div>  
                     </a>
                     <a href="promocje.php">
-                        <div class="option">Promocje</div>  
+                        <div class="option"style="color:yellow; background-color:#CB0602">Promocje</div>  
                     </a>
                     <a href="kontakt.php">
                         <div class="option">Kontakt</div> 
@@ -66,6 +53,7 @@
 
 	    <img src=".\img\promocje.png">
             <div class="dottedLine"></div>
+            <div style="margin-top:150px">
             <br />
             <?php
 $con = mysql_connect("localhost","root","");
@@ -84,8 +72,8 @@ if(mysql_num_rows($wynik) > 0) {
 
     while($r = mysql_fetch_assoc($wynik)) {
         
-         echo "<span style='color:black; font-size: 26px; font-style: italic; '>Dzisiaj w promocji pizza: </span>",
-         "<span style='color:red; font-size: 40px; font-weight:800;
+         echo "<span style='color:black; font-size: 32px; font-style: italic; '>Dzisiaj w promocji pizza: </span>",
+         "<span style='color:black; font-size: 32px; font-weight:800;
          font-style:italic;'>".$r['promo']."</span>";
     
     }
@@ -99,10 +87,10 @@ if(mysql_num_rows($wynik) > 0) {
             <img src=".\img\promka.png" width="300px" height="300px">
             <img src=".\img\promocja.png" width="300px" height="300px">
             <br/>
- 
+</div>
         </div>
         <div id="sidebar">
-            <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
+            <img src="https://zapodaj.net/images/bf45b73492fb8.jpg">
             
     </div>
         <div id="footer">
