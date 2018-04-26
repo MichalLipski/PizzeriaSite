@@ -20,7 +20,7 @@
         <div id="container">
             <div id="logo" background>
 
-                <img src="img/papanapis.gif">
+                <img src="img/papanapis.gif" style="margin-left:-15px">
 
 
             </div>
@@ -45,22 +45,23 @@
 
 
             <div id="content2">
-            <span style="color: #23613C; font-size: 30px;">Telefon:</span> <span style="font-size: 30px;">123-456-789</span>
+            <span style=" font-size: 30px;">Kom: </span> <span style="font-size: 30px;">889 998 990</span>
             <br />
             <br />
                 <form action="kodbierz.php" method="post">
                     <div>
                         <label for="paragon">Numer z paragonu:</label>
-                        <input id="paragon" name="paragon" />
+                        <input id="paragon" name="paragon" style="width: 13.5%; height:50px" />
                     </div>
-                    <textarea name="tresc" rows="5" cols="50">Fragment tekstu</textarea>
+                    <textarea name="tresc" style="width: 90%; height:200px">Fragment tekstu</textarea>
                     <div>
                         <input type="submit" id="wyslij" value="Wyślij" />
                     </div>
                 </form>
-                <br/>
-                <br/>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2333.671442022936!2d16.194991915870947!3d54.20360138016759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4701cd6c25a0d01b%3A0x18c121a16eb15d35!2sPolitechnika+Koszali%C5%84ska!5e0!3m2!1spl!2spl!4v1522267649294" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <br/><br/>
+                <h3>Chcesz odebrać pizzę osobiście? Znajdziesz nas tutaj:<h3/>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2333.671442022936!2d16.194991915870947!3d54.20360138016759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4701cd6c25a0d01b%3A0x18c121a16eb15d35!2sPolitechnika+Koszali%C5%84ska!5e0!3m2!1spl!2spl!4v1522267649294" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
             </div>

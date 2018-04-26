@@ -31,34 +31,34 @@
         <div id="whole">
             <div id="container">
                 <div id="logo" background>
-                    <img src="img/papanapis.gif">
+                    <img src="img/papanapis.gif" style="margin-left:-15px" />
                     <button type="button" id="button1" style="float:right;" onclick="document.getElementById('id01').style.display='block'">Zaloguj</button>
                     <!--saaaaaaaassssssalllllllllllllllllllllllllllllllllllllllllllll -->
 
 
 
-                    <div id="id01" class="modal">
-                        <div id=”wrapper”>
+                    <div id="id01" class="modal"style="width:325px; height:260px">
+                        <div id=”wrapper” >
                             <form action="zaloguj.php" method="post">
                                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                                <div class=”content”>
+                                <div class=”content” style="border: 1px solid black;width:300px">
                                     <br/>
                                     <br/>
-                                    <div class=”element”>
+                                    <div class=”element” style="margin-left:15px">
                                         <label for="uname">
                                             <b>Login: </b>
                                         </label>
                                         <input type="text" id="text" placeholder="Enter Username" name="login">
                                     </div>
                                     </br>
-                                    <div class=”element”>
+                                    <div class=”element” style="margin-left:15px">
                                         <label for="psw">
                                             <b>Haslo: </b>
                                         </label>
                                         <input type="password" placeholder="Enter Password" name="haslo">
                                     </div>
                                     <div id="zalogujsie">
-                                        <input type="submit" value="Zaloguj" />
+                                        <input type="submit" id="wyslij" value="Zaloguj" />
                                     </div>
                                 </div>
                             </form>
@@ -100,7 +100,7 @@
                         </div>
                         <div>
                             <!-- <label for="ulica">Ulica* </label> -->
-                            <input id="ulica" name="ulica" placeholder="Ulica :" onfocus="this.placeholder='';" onblur="this.placeholder='Ulica: ';" /><br/>
+                            <input id="ulica" name="ulica" placeholder="Ulica:" onfocus="this.placeholder='';" onblur="this.placeholder='Ulica: ';" /><br/>
                             <!-- <label for="ulica"> Nr domu* </label> -->
                             <input id="ulica" name="ulica" size="10" placeholder="Nr domu: " onfocus="this.placeholder='';" onblur="this.placeholder='Nr domu: ';" /><br/>
                             <!-- <label for="ulica"> Nr mieszkania </label> -->
@@ -122,7 +122,7 @@
                             <option value="Everest">Everest</option>
                             <option value="Peperoni">Peperoni</option>
                             <option value="Cukinio">Cukinio</option>
-                            <option value="FireBall">FireBall</option>
+                            <option value="FireBall">Fireball</option>
                             <option value="Trzy sery">Trzy sery</option>
                             <option value="Grecka">Grecka</option>
                             <option value="Capricciosa">Capricciosa</option>
@@ -151,7 +151,7 @@
                     </form>
                 </div>
                 <div id="sidebar">
-                    <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
+                    <img src="https://zapodaj.net/images/bf45b73492fb8.jpg">
 
                 </div>
                 <div id="footer">

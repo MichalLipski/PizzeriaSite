@@ -71,15 +71,9 @@ echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php" style="text-decorat
         
         <div id="content">
 
-	    <form action="kodbierz.php" method="post">
-        <div><label for="paragon">Numer z paragonu:</label><input id="paragon" name="paragon" /></div>
-        <textarea name="tresc" rows="5" cols="50">Fragment tekstu</textarea>
-        <div><input type="submit" value="Wyślij" /></div>
-         </form>
-            
         </div>
         <div id="sidebar">
-            <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
+        <img src="https://zapodaj.net/images/bf45b73492fb8.jpg">
             
     </div>
         <div id="footer">

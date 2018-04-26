@@ -38,7 +38,7 @@
 echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php">Wyloguj się!</a> ]</p>';
 
 ?>
-                        <img src="img/papanapis.gif">
+                        <img src="img/papanapis.gif" style="margin-left:-15px; margin-top:-15px;">
 
 
                         <div id="id01" class="modal">
@@ -58,7 +58,7 @@ echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php">Wyloguj się!</a> ]
                 </div>
 
                 <div id="menu" style="background-color:#AE1506">
-
+                <a href="zamowienia.php">
                         <div class="option" style="width:313px">Zamowienia</div>
                     </a>
                     <a href="promocjep.php">
@@ -117,10 +117,7 @@ if(mysql_num_rows($wynik) > 0) {
 ?>
 
                 </div>
-                <div id="sidebar">
-                    <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
-
-                </div>
+             
                 <div id="footer">
                     Pizzeria Papa Malix - Najsmaczniejsza Pizza w Koszalinie!. &copy; Wszelkie prawa zastrzeżone!
                 </div>

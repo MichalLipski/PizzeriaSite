@@ -1,12 +1,12 @@
 body
 {
     margin: 0px;
-    background: url("http://mjnewground.org/wp-content/themes/politicize/framework/images/pattern/pattern-10.png")
-    , url("img/pattern.png");
+    background: url("img/green.png")
+    , url("img/red.png");
     font-family: 'Lato', sans-serif;
     background-position: left, right;
     background-repeat: repeat-y, repeat-y;
-    background-size: 13.1%;
+    background-size: 17%;
     
 }
 
@@ -16,7 +16,7 @@ body
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #EEE;
+    background-color: #fff;
 
 }
 
@@ -88,14 +88,14 @@ body
     text-align: center;
     font-size: 18px;
     min-height: 1046px;
-    border-left: #BA0703 solid 3px;
+    border-left: #ddd solid 1px;
     
 }
 
 #content
 {
     color:black;
-    background-color: #EEE;
+    background-color: #ffffff;
     float: left;
     padding: 40px;
     width: 667px;
@@ -107,7 +107,7 @@ body
 #content2
 {
     color:black;
-    background-color: #EEE;
+    background-color: #ffffff;
     float: left;
     padding: 40px;
     width: 917px;
@@ -297,7 +297,7 @@ span.psw {
 {
     width: 300px;
     background-color: #efefef;
-    color: #CB0602;
+    color: #000;
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 20px;
@@ -310,7 +310,7 @@ span.psw {
 {
     width: 300px;
     background-color: #efefef;
-    color: #CB0602;
+    color: #000;
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 20px;
@@ -323,7 +323,7 @@ span.psw {
 select
 {
     background-color: #efefef;
-    color: #CB0602;
+    color: #000;
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 15px;
@@ -366,7 +366,7 @@ select
 {
     width: 60px;
     background-color: #efefef;
-    color: #CB0602;
+    color: #000;
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 15px;
@@ -379,7 +379,7 @@ textarea
 {
     width: 300px;
     background-color: #efefef;
-    color: #CB0602;
+    color: #000;
     border: 2px solid #ddd;
     border-radius: 5px;
     font-size: 18px;

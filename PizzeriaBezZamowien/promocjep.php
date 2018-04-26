@@ -38,7 +38,7 @@
 echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php">Wyloguj się!</a> ]</p>';
 
 ?>
-                        <img src="img/papanapis.gif">
+                        <img src="img/papanapis.gif" style="margin-left:-15px; margin-top:-15px;">
 
 
                         <div id="id01" class="modal">
@@ -54,10 +54,6 @@ echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php">Wyloguj się!</a> ]
                             </form>
 
                         </div>
-
-
-
-
 
                 </div>
 
@@ -85,7 +81,7 @@ echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php">Wyloguj się!</a> ]
                             <option value="Everest">Everest</option>
                             <option value="Peperoni">Peperoni</option>
                             <option value="Cukinio">Cukinio</option>
-                            <option value="FireBall">FireBall</option>
+                            <option value="Fireball">Fireball</option>
                             <option value="Trzy sery">Trzy sery</option>
                             <option value="Grecka">Grecka</option>
                             <option value="Capricciosa">Capricciosa</option>
@@ -94,9 +90,9 @@ echo "<p>Widok ".$_SESSION['user'].'a [ <a href="logout.php">Wyloguj się!</a> ]
                             <option value="Vegetariana">Vegetariana</option>
 
                         </select>
-
+                       
                         <div>
-                            <input type="submit" value="Wyślij" name="submit" />
+                            <input type="submit"id="wyslij" value="Wyślij" name="submit" />
                         </div>
                     </form>
                     <?php
@@ -116,8 +112,8 @@ if(mysql_num_rows($wynik) > 0) {
 
     while($r = mysql_fetch_assoc($wynik)) {
         
-        echo "<span style='color:black; font-size: 26px; font-style: italic; '>Dzisiaj w promocji pizza: </span>",
-         "<span style='color:red; font-size: 40px; font-weight:800;
+        echo "<span style=' font-size: 32px; font-style: italic; '>Dzisiaj w promocji pizza: </span>",
+         "<span style=' font-size: 32px; font-weight:800;
          font-style:italic;'>".$r['promo']."</span>";
      
     }
@@ -127,7 +123,7 @@ if(mysql_num_rows($wynik) > 0) {
 ?>
                 </div>
                 <div id="sidebar">
-                    <img src="https://zapodaj.net/images/9b9ccd005175a.jpg">
+                    <img src="https://zapodaj.net/images/bf45b73492fb8.jpg">
 
                 </div>
                 <div id="footer">
