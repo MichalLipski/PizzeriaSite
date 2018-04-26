@@ -85,7 +85,7 @@ body
 {
     float: left;
     width: 250px;
-    background-color: #ffffff;
+    background-color: #EEE;
     text-align: center;
     font-size: 18px;
     min-height: 1046px;
@@ -102,8 +102,7 @@ body
     width: 667px;
     text-align: justify;
     height: 966px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: auto;
 
 }
 #content2
@@ -338,12 +337,12 @@ select
 
 #wyslij
 {
-    width: 205px;
+    width: 300px;
     background-color: #23613C;
     font-size: 20px;
     color: white;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 15px 10px;
+    margin-top: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -383,8 +382,6 @@ ul li{ list-style: none;}
  
 .form-in-line {
     display: inline-block;
-    margin-right: 1px;
-    
 }
 
 .labels {
@@ -396,12 +393,12 @@ ul li{ list-style: none;}
 }
 
 #deleteFirstPizza{
-    width: 205px;
+    width: 260px;
     background-color: #23613C;
     font-size: 20px;
     color: white;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 15px 10px;
+    margin-top: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -411,38 +408,16 @@ ul li{ list-style: none;}
 
 }
 #addNewPizzaBtn{
-    width: 205px;
+    width: 260px;
     background-color: #23613C;
     font-size: 20px;
     color: white;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 15px 10px;
+    margin-top: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     letter-spacing: 2px;
     outline: none;
     margin-top: 20px;
-}
-
-#zapispizza{
-    width: 160px;
-    height: 46px;
-    background-color: #23613C;
-    font-size: 20px;
-    color: white;
-
-    margin-top: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    letter-spacing: 2px;
-    outline: none;
-    margin-top: 20px;
-}
-
-#pizzaAmount{
-    height: 45px;
-    width: 100px;
-    padding: 2px;
 }
