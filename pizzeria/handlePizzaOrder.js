@@ -82,9 +82,11 @@ addNewPizzaBtn.addEventListener('click', event => {
     div3.classList.add('form-in-line');
     const pizzaAmount = document.createElement('input');
     pizzaAmount.name = "pizzaAmount" + i;
-    pizzaAmount.type = "text";
+    pizzaAmount.type = "number";
     pizzaAmount.id = "pizzaAmount";
-    pizzaAmount.value = "Ilość";
+    pizzaAmount.min ="1";
+    pizzaAmount.max="100";
+    pizzaAmount.value="1"; 
 
     div3.appendChild(pizzaAmount);
 
@@ -93,7 +95,7 @@ addNewPizzaBtn.addEventListener('click', event => {
     mainDiv.appendChild(div3);
 
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = "Usun pizza"
+    deleteButton.textContent = "Usuń pizza"
     deleteButton.id="deleteFirstPizza"
     deleteButton.addEventListener('click', deleteOnePizza);
     i++;

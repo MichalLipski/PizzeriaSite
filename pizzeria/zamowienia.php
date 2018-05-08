@@ -101,14 +101,13 @@ echo "<td >".'Telefon: '."<br/>".$c['telefon']."</td>";
 echo "<td >".'Ulica: '."<br/>".$c['ulica']."</td>";
 echo "<td >".'Nr domu: '."<br/>".$c['nr_domu']."</td>";
 echo "<td >".'Nr mieszkania: '."<br/>".$c['nr_mieszkania']."</td>";
-echo"<td> <form action=\"zamianastatusu.php\" method=\"POST\">
-<select name=\"s1\">
-<option value=\"w realizacji\">w realizacji</option>
-<option value=\"dostarczone\">dostarczone</option>
-<option value=\"anulowane\">anulowane</option>
-</select>
-<input type=\"submit\" value=\"Zapisz\" id=\"zapispizza\" >
-<input name=\"item_id\"type=\"hidden\" value=\"$c[paragon]\"></input>
+echo "<td >".'Status: '."<br/>".$c['status']."</td>";
+echo"<td> <form action=\"zamianastatusu.php\" method=\"POST\" id=\"form1\">
+
+<input type=\"radio\" name=\"statu\" value=\"w realizacji$c[paragon]\"  form=\"form1\" onChange=\"this.form.submit()\"> w realizacji<br>
+  <input type=\"radio\" name=\"statu\" value=\"dostarczona$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> dostarczona<br>
+  <input type=\"radio\" name=\"statu\" value=\"anulowany$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> anulowany
+
 </form></td>";
 echo "</tr>";
 echo "</table>";
@@ -122,9 +121,8 @@ echo "<tr>";
 echo "<td >".'Pizza: '."<br/>".$r['pizza']."</td>";
 echo "<td >".'Rozmiar: '."<br/>".$r['rozmiar']."</td>";
 echo "<td >".'Ilość: '."<br/>".$r['ilosc']."</td>";
-echo "<td >".'Status: '."<br/>".$r['status']."</td>";
+
 echo "<td >".$pus."</td>";
-// echo "<td width=\"160\" height=\"60\" >".$r['status']."</td>";
 
 
 echo "</tr>";

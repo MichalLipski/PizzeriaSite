@@ -4,6 +4,12 @@ $telefon=$_POST['telefon'];
 $ulica=$_POST['ulica'];
 $nrdomu=$_POST['nrdomu'];
 $nrmieszkania=$_POST['nrmieszkania'];
+echo $nrmieszkania;
+if($nrmieszkania==''){
+    $nrmieszkania='-';
+}else{
+    
+}
 $pom=0;
 $pizza;
 $rozmiar;
@@ -54,7 +60,7 @@ $status="oczekuje";
  $sth->bindParam( ':telefon', $_POST['telefon'] );
  $sth->bindParam( ':ulica', $_POST['ulica'] );
  $sth->bindParam( ':nrdomu', $_POST['nrdomu'] );
- $sth->bindParam( ':nrmieszkania', $_POST['nrmieszkania'] );
+ $sth->bindParam( ':nrmieszkania', $nrmieszkania );
  $sth->bindParam( ':pizza', $p );
  $sth->bindParam( ':rozmiar', $roz);
  $sth->bindParam( ':ilosc', $ilo );

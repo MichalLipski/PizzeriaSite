@@ -98,21 +98,21 @@
                         <div><input id="addNewPizzaBtn" value="Zamów" type="submit" ></div>
                 
                     <div>
-
+                    
                         
-                        <input id="telefon" name="telefon" placeholder="Telefon:" onfocus="this.placeholder='';" onblur="this.placeholder='Telefon:';"
+                        <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" id="telefon" required name="telefon" placeholder="Telefon:" onfocus="this.placeholder='';" onblur="this.placeholder='Telefon:';"
                         />
                     </div>
                     <div>
                        
-                        <input id="ulica" name="ulica" placeholder="Ulica:" onfocus="this.placeholder='';" onblur="this.placeholder='Ulica: ';" />
+                        <input id="ulica" required name="ulica" placeholder="Ulica:" onfocus="this.placeholder='';" onblur="this.placeholder='Ulica: ';" />
                         <br/>
                        
-                        <input id="ulica" name="nrdomu" size="10" placeholder="Nr domu: " onfocus="this.placeholder='';" onblur="this.placeholder='Nr domu: ';"
+                        <input id="ulica" required name="nrdomu" size="10" placeholder="Nr domu: " onfocus="this.placeholder='';" onblur="this.placeholder='Nr domu: ';"
                         />
                         <br/>
                         
-                        <input id="ulica" name="nrmieszkania" size="10" placeholder="Nr mieszkania: " onfocus="this.placeholder='';" onblur="this.placeholder='Nr mieszkania: ';"
+                        <input id="ulica" type="number"  name="nrmieszkania"  placeholder="Nr mieszkania: " onfocus="this.placeholder='';" onblur="this.placeholder='Nr mieszkania: ';"
                         />
                         <br/>
                     </div>
@@ -148,9 +148,9 @@
                             </div>
                             <div class="form-in-line"  style="margin-right: -2px">
 
-                                <input type="text" id="pizzaAmount" value="Ilość" name="pizzaAmount0">
+                                <input type="number" min="1" max="100"  id="pizzaAmount" value="1" name="pizzaAmount0" required>
                             </div>
-                            <button id="deleteFirstPizza">Usun pizze</button>
+                            <button id="deleteFirstPizza">Usuń pizze</button>
                         </div>
 
   
