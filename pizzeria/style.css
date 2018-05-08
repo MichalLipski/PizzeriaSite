@@ -85,11 +85,13 @@ body
 {
     float: left;
     width: 250px;
-    background-color: #ffffff;
-    text-align: center;
-    font-size: 18px;
+    background-color: #fff;
+    text-align: left;
+    font-size: 26px;
     min-height: 1046px;
     border-left: #ddd solid 1px;
+
+    
     
 }
 
@@ -442,7 +444,8 @@ ul li{ list-style: none;}
 }
 
 #pizzaAmount{
-    height: 45px;
+    height: 35px;
     width: 100px;
     padding: 2px;
+    font-size: 16px;;
 }
