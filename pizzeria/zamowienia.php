@@ -102,13 +102,34 @@ echo "<td >".'Ulica: '."<br/>".$c['ulica']."</td>";
 echo "<td >".'Nr domu: '."<br/>".$c['nr_domu']."</td>";
 echo "<td >".'Nr mieszkania: '."<br/>".$c['nr_mieszkania']."</td>";
 echo "<td >".'Status: '."<br/>".$c['status']."</td>";
-echo"<td> <form action=\"zamianastatusu.php\" method=\"POST\" id=\"form1\">
-
-<input type=\"radio\" name=\"statu\" value=\"w realizacji$c[paragon]\"  form=\"form1\" onChange=\"this.form.submit()\"> w realizacji<br>
+//if("w realizacji" == $c['status']){
+    echo"<td> <form action=\"zamianastatusu.php\" method=\"POST\" id=\"form1\">
+<input type=\"radio\"  name=\"statu\" value=\"w realizacji$c[paragon]\"  form=\"form1\" onChange=\"this.form.submit()\" checked=\"checked\"> w realizacji<br>
   <input type=\"radio\" name=\"statu\" value=\"dostarczona$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> dostarczona<br>
   <input type=\"radio\" name=\"statu\" value=\"anulowany$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> anulowany
 
 </form></td>";
+//};
+
+// if("dostarczona" == $c['status']){
+//     echo"<td> <form action=\"zamianastatusu.php\"  method=\"POST\" id=\"form1\">
+// <input type=\"radio\"  name=\"statu\" value=\"w realizacji$c[paragon]\"  form=\"form1\" onChange=\"this.form.submit()\"> w realizacji<br>
+//   <input type=\"radio\" name=\"statu\" value=\"dostarczona$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> dostarczona<br>
+//   <input type=\"radio\" name=\"statu\" value=\"anulowany$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> anulowany
+
+// </form></td>";
+// };
+
+// if("anulowany" == $c['status']){
+//     echo"<td> <form action=\"zamianastatusu.php\" method=\"POST\" id=\"form1\">
+
+// <input type=\"radio\" name=\"statu\" value=\"w realizacji$c[paragon]\"  form=\"form1\" onChange=\"this.form.submit()\"> w realizacji<br>
+//   <input type=\"radio\" name=\"statu\" value=\"dostarczona$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> dostarczona<br>
+//   <input type=\"radio\" name=\"statu\" value=\"anulowany$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> anulowany
+
+// </form></td>";
+// };
+
 echo "</tr>";
 echo "</table>";
 echo "<table cellpadding=\"2\" style=\" border-bottom: 5px solid black\">";

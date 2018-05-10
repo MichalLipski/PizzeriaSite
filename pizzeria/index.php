@@ -100,19 +100,19 @@
                     <div>
                     
                         
-                        <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" id="telefon" required name="telefon" placeholder="Telefon:" onfocus="this.placeholder='';" onblur="this.placeholder='Telefon:';"
+                        <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" id="telefon" required name="telefon" placeholder="Telefon*" onfocus="this.placeholder='';" onblur="this.placeholder='Telefon*';"
                         />
                     </div>
                     <div>
                        
-                        <input id="ulica" required name="ulica" placeholder="Ulica:" onfocus="this.placeholder='';" onblur="this.placeholder='Ulica: ';" />
+                        <input id="ulica" required name="ulica" placeholder="Ulica*" onfocus="this.placeholder='';" onblur="this.placeholder='Ulica* ';" />
                         <br/>
                        
-                        <input id="ulica" required name="nrdomu" size="10" placeholder="Nr domu: " onfocus="this.placeholder='';" onblur="this.placeholder='Nr domu: ';"
+                        <input id="ulica" required name="nrdomu" size="10" placeholder="Nr domu* " onfocus="this.placeholder='';" onblur="this.placeholder='Nr domu* ';"
                         />
                         <br/>
                         
-                        <input id="ulica" type="number"  name="nrmieszkania"  placeholder="Nr mieszkania: " onfocus="this.placeholder='';" onblur="this.placeholder='Nr mieszkania: ';"
+                        <input id="ulica" type="number"  name="nrmieszkania"  placeholder="Nr mieszkania " onfocus="this.placeholder='';" onblur="this.placeholder='Nr mieszkania ';"
                         />
                         <br/>
                     </div>
@@ -123,7 +123,7 @@
                         <div class="labels" >
                             
                             <div class="form-in-line" style="margin-right: -2px"> 
-                                <select name="pizzaType0" id="pizzaType">
+                                <select name="pizzaType0" >
                                     <option default value="Apollo">Apollo</option>
                                     <option value="Amerykanska">Amerykanska</option>
                                     <option value="Everest">Everest</option>

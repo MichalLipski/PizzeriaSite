@@ -87,7 +87,7 @@ body
     width: 250px;
     background-color: #fff;
     text-align: left;
-    font-size: 26px;
+    font-size: 23px;
     min-height: 1046px;
     border-left: #ddd solid 1px;
 
@@ -199,6 +199,20 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  margin: 0; 
+}
+input[type=number]::-mozkit-inner-spin-button, 
+input[type=number]::-moz-outer-spin-button { 
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  margin: 0; 
+}
+
+
 #zalogujsie{
     width: 100%;
     text-align: center;
@@ -309,6 +323,7 @@ span.psw {
     box-sizing: border-box;
     outline: none;
     margin-top: 10px;
+    
 }
 #telefon
 {
@@ -327,10 +342,10 @@ span.psw {
 select
 {
     background-color: #efefef;
-    color: #000;
+
     border: 2px solid #ddd;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px;
     box-sizing: border-box;
     outline: none;
@@ -386,13 +401,17 @@ ul li{ list-style: none;}
 .form-in-line {
     display: inline-block;
     margin-right: 1px;
+    -webkit-appearance: none; 
+    margin: 0; 
     
 }
 
 .labels {
     display: block;
 }
-
+#pizzaType{
+    font-size: 15px
+}
 .pizzaContainer {
     display: block;
 }
@@ -413,7 +432,7 @@ ul li{ list-style: none;}
 
 }
 #addNewPizzaBtn{
-    width: 205px;
+    width: 215px;
     background-color: #23613C;
     font-size: 20px;
     color: white;
