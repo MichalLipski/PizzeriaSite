@@ -101,34 +101,16 @@ echo "<td >".'Telefon: '."<br/>".$c['telefon']."</td>";
 echo "<td >".'Ulica: '."<br/>".$c['ulica']."</td>";
 echo "<td >".'Nr domu: '."<br/>".$c['nr_domu']."</td>";
 echo "<td >".'Nr mieszkania: '."<br/>".$c['nr_mieszkania']."</td>";
-echo "<td >".'Status: '."<br/>".$c['status']."</td>";
-//if("w realizacji" == $c['status']){
-    echo"<td> <form action=\"zamianastatusu.php\" method=\"POST\" id=\"form1\">
-<input type=\"radio\"  name=\"statu\" value=\"w realizacji$c[paragon]\"  form=\"form1\" onChange=\"this.form.submit()\" checked=\"checked\"> w realizacji<br>
-  <input type=\"radio\" name=\"statu\" value=\"dostarczona$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> dostarczona<br>
-  <input type=\"radio\" name=\"statu\" value=\"anulowany$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> anulowany
+echo "<td >". "Status:" ."</td>";
+?> 
+<td> <form action="zamianastatusu.php" method="POST" id="form1">
+<input type="radio"  name="statu" value="w realizacji<?=$c['paragon']?>" onChange="this.form.submit()" <?php if("w realizacji" == $c['status']) {echo 'checked="checked"';};?>> w realizacji<br>
+  <input type="radio" name="statu" value="dostarczona<?=$c['paragon']?>" onChange="this.form.submit()"<?php if("dostarczona" == $c['status']) {echo 'checked="checked"';};?>> dostarczona<br>
+  <input type="radio" name="statu" value="anulowany<?=$c['paragon']?>" onChange="this.form.submit()"<?php if("anulowany" == $c['status']) {echo 'checked="checked"';};?>> anulowany
 
-</form></td>";
-//};
+</form></td>
 
-// if("dostarczona" == $c['status']){
-//     echo"<td> <form action=\"zamianastatusu.php\"  method=\"POST\" id=\"form1\">
-// <input type=\"radio\"  name=\"statu\" value=\"w realizacji$c[paragon]\"  form=\"form1\" onChange=\"this.form.submit()\"> w realizacji<br>
-//   <input type=\"radio\" name=\"statu\" value=\"dostarczona$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> dostarczona<br>
-//   <input type=\"radio\" name=\"statu\" value=\"anulowany$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> anulowany
-
-// </form></td>";
-// };
-
-// if("anulowany" == $c['status']){
-//     echo"<td> <form action=\"zamianastatusu.php\" method=\"POST\" id=\"form1\">
-
-// <input type=\"radio\" name=\"statu\" value=\"w realizacji$c[paragon]\"  form=\"form1\" onChange=\"this.form.submit()\"> w realizacji<br>
-//   <input type=\"radio\" name=\"statu\" value=\"dostarczona$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> dostarczona<br>
-//   <input type=\"radio\" name=\"statu\" value=\"anulowany$c[paragon]\"form=\"form1\" onChange=\"this.form.submit()\"> anulowany
-
-// </form></td>";
-// };
+<?php
 
 echo "</tr>";
 echo "</table>";
